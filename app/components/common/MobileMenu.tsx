@@ -128,17 +128,6 @@ export function MobileMenu() {
                 <span>{t('github')}</span>
                 <Icon icon="solar:external-link-linear" className="w-4 h-4 ml-auto opacity-50" aria-hidden="true" />
               </a>
-
-              <Link
-                href="/donate"
-                target="_blank"
-                onClick={closeMenu}
-                className="flex items-center gap-3 px-4 py-3 text-neutral-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors"
-              >
-                <Icon icon="mdi:donate" className="w-5 h-5" aria-hidden="true" />
-                <span>{t('donate')}</span>
-                <Icon icon="solar:external-link-linear" className="w-4 h-4 ml-auto opacity-50" aria-hidden="true" />
-              </Link>
             </div>
           </nav>
 

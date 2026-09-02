@@ -1,6 +1,6 @@
 import { getRequestConfig } from 'next-intl/server';
 
-export const locales = ['en', 'es', 'ru', 'ko'] as const;
+export const locales = ['en', 'es', 'ru', 'ko', 'vi'] as const;
 export const defaultLocale = 'en' as const;
 export type Locale = (typeof locales)[number];
 
@@ -9,6 +9,7 @@ const messageLoaders: Record<Locale, () => Promise<{ default: Record<string, unk
   es: () => import('./messages/es.json'),
   ru: () => import('./messages/ru.json'),
   ko: () => import('./messages/ko.json'),
+  vi: () => import('./messages/vi.json'),
 };
 
 export default getRequestConfig(async ({ requestLocale }) => {

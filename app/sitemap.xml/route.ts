@@ -4,7 +4,6 @@ const BASE_URL = 'https://openvid.dev';
 
 const routes = [
   { path: '', priority: 1.0, changeFrequency: 'weekly' },
-  { path: '/donate', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/privacy', priority: 0.5, changeFrequency: 'yearly' },
   { path: '/terms', priority: 0.5, changeFrequency: 'yearly' },
 ];

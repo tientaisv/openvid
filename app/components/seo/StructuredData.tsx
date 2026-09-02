@@ -77,7 +77,9 @@ export function StructuredData({ data }: StructuredDataProps) {
   );
 }
 
-export function generateWebAppSchema(locale: 'es' | 'en' | 'ru' | 'ko'): WebApplicationSchema {
+import type { Locale } from "@/i18n";
+
+export function generateWebAppSchema(locale: Locale): WebApplicationSchema {
   const baseUrl = SEO_BASE_URL;
 
   const content = {
@@ -129,9 +131,21 @@ export function generateWebAppSchema(locale: 'es' | 'en' | 'ru' | 'ko'): WebAppl
         '무료 온라인 에디터',
       ],
     },
+    vi: {
+      name: 'openvid - Trình chỉnh sửa Video Trực tuyến',
+      description: 'Trình chỉnh sửa video online miễn phí với AI. Ghi màn hình, tự động zoom thông minh, mockup 3D và xuất video sắc nét không watermark.',
+      features: [
+        'Ghi màn hình HD',
+        'AI Auto-Zoom thông minh',
+        'Mockup thiết bị 3D',
+        'Không watermark',
+        'Xuất video chất lượng cao',
+        'Trình chỉnh sửa online miễn phí',
+      ],
+    },
   };
 
-  const { name, description, features } = content[locale];
+  const { name, description, features } = content[locale] || content.en;
 
   return {
     '@context': 'https://schema.org',
@@ -149,8 +163,8 @@ export function generateWebAppSchema(locale: 'es' | 'en' | 'ru' | 'ko'): WebAppl
     inLanguage: locale,
     image: SEO_OG_IMAGE.url,
     author: {
-      '@type': 'Person',
-      name: 'Cristian Olivera',
+      '@type': 'Organization',
+      name: 'openvid',
       url: baseUrl,
     },
     featureList: features,
@@ -165,21 +179,12 @@ export function generateOrganizationSchema(): OrganizationSchema {
     url: SEO_BASE_URL,
     logo: SEO_ICON_ABSOLUTE.logo,
     sameAs: [
-      'https://x.com/openvid',
-      'https://www.tiktok.com/@openvid',
-      'https://www.instagram.com/openvidink',
-      'https://www.youtube.com/@openvidink',
-      'https://github.com/CristianOlivera1/openvid',
+      'https://github.com/tientaisv/openvid',
     ],
-    contactPoint: {
-      '@type': 'ContactPoint',
-      contactType: 'Customer Support',
-      email: 'oliverachavezcristian@gmail.com',
-    },
   };
 }
 
-export function generateWebSiteSchema(locale: 'es' | 'en' | 'ru' | 'ko'): WebSiteSchema {
+export function generateWebSiteSchema(locale: Locale): WebSiteSchema {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',

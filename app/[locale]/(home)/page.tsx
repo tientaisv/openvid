@@ -6,7 +6,6 @@ import {
   generateWebSiteSchema,
 } from "@/app/components/seo/StructuredData";
 import type { Metadata } from "next";
-import DonationCard from "@/app/components/ui/home/DonationCard";
 import BannerCTA from "@/app/components/ui/home/BannerCTA";
 import FeaturesGrid from "@/app/components/ui/home/Featuresgrid";
 import FeaturesShowcase from "@/app/components/ui/home/FeaturesShowcase";
@@ -79,6 +78,21 @@ const HOME_COPY = {
       "openvid",
     ],
   },
+  vi: {
+    title: "Tạo Video Demo Chuyên Nghiệp & Chỉnh Sửa Trong Vài Giây",
+    description:
+      "Trình chỉnh sửa video trực tuyến miễn phí với AI. Ghi màn hình, zoom thông minh, mockup 3D và xuất video chất lượng cao không gắn watermark.",
+    keywords: [
+      "chỉnh sửa video",
+      "ghi màn hình",
+      "quay màn hình",
+      "video demo",
+      "zoom video",
+      "mockup 3D",
+      "trình chỉnh sửa video online",
+      "openvid",
+    ],
+  },
 } as const;
 
 type HomeLocale = keyof typeof HOME_COPY;
@@ -131,10 +145,6 @@ export default async function Home({ params }: Props) {
 
             <div id="reactions" className="w-full">
               <SocialReactions />
-            </div>
-
-            <div className="max-w-xl mx-auto px-6 pt-24 pb-50">
-              <DonationCard />
             </div>
 
             <BannerCTA />

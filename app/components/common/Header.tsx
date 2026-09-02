@@ -144,9 +144,6 @@ export default function Header() {
             <Link href="/guide" target="_blank" className="hover:text-white transition-colors">
               {t("guide")}
             </Link>
-            <Link href="/donate" target="_blank" className="hover:text-white transition-colors">
-              {t("donate")}
-            </Link>
           </nav>
 
           <div className="flex items-center gap-3 sm:gap-6">

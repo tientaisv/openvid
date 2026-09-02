@@ -7,7 +7,10 @@ import { Icon } from '@iconify/react';
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 import { Button } from '@/components/ui/button';
 
+import type { Locale } from '@/i18n';
+
 const languages = [
+  { code: 'vi', name: 'Tiếng Việt', icon: 'circle-flags:vn' },
   { code: 'en', name: 'English', icon: 'circle-flags:us' },
   { code: 'es', name: 'Español', icon: 'circle-flags:es' },
   { code: 'ru', name: 'Русский', icon: 'circle-flags:ru' },
@@ -23,7 +26,7 @@ export function LanguageSwitcher() {
 
   const currentLanguage = languages.find(lang => lang.code === locale) || languages[0];
 
-  const handleLanguageChange = (newLocale: 'en' | 'es' | 'ru' | 'ko') => {
+  const handleLanguageChange = (newLocale: Locale) => {
     if (newLocale === locale) return;
 
     startTransition(() => {

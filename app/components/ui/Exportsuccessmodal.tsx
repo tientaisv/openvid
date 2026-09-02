@@ -13,7 +13,6 @@ interface ExportSuccessModalProps {
   onClose: () => void;
   mediaType?: ExportSuccessMediaType;
   fileName?: string;
-  donateUrl?: string;
   githubUrl?: string;
   thumbnailDataUrl?: string;
 }
@@ -83,7 +82,6 @@ export function ExportSuccessModal({
   onClose,
   mediaType = "video",
   fileName,
-  donateUrl = "/donate",
   githubUrl = "https://github.com/tientaisv/openvid",
   thumbnailDataUrl,
 }: ExportSuccessModalProps) {
@@ -289,12 +287,6 @@ export function ExportSuccessModal({
         </div>
 
         <div className="space-y-2.5 mb-6">
-          <ActionCard
-            href={donateUrl}
-            icon="carbon:cafe"
-            title={t("supportCoffee")}
-            glowClassName="bg-blue-500/15"
-          />
           <ActionCard
             href={githubUrl}
             icon="mdi:github"
