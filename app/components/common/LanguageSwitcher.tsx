@@ -65,7 +65,7 @@ export function LanguageSwitcher() {
           {languages.map((lang) => (
             <DropdownMenu.Item
               key={lang.code}
-              onSelect={() => handleLanguageChange(lang.code as 'en' | 'es' | 'ru' | 'ko')}
+              onSelect={() => handleLanguageChange(lang.code as Locale)}
               className={`flex items-center gap-3 px-3 py-2 text-sm squircle-element cursor-pointer outline-none transition-colors ${locale === lang.code ? 'bg-white/10 text-white' : 'text-white/70 hover:bg-white/5 hover:text-white'
                 }`}
               aria-current={locale === lang.code ? 'true' : undefined}

@@ -102,21 +102,21 @@
       ]
     },
     "children": {
-      "title": "Children's Privacy",
-      "content": "Our service is not directed to children under 13. We do not knowingly collect information from minors."
+      "title": "Quyền riêng tư trẻ em",
+      "content": "Dịch vụ của chúng tôi không dành cho trẻ em dưới 13 tuổi. Chúng tôi không cố ý thu thập thông tin từ trẻ vị thành niên."
     },
     "changes": {
-      "title": "Changes to This Policy",
-      "content": "We may update this policy occasionally. We will notify you of significant changes by posting the new policy on this page."
+      "title": "Thay đổi chính sách",
+      "content": "Chúng tôi có thể cập nhật chính sách này định kỳ. Chúng tôi sẽ thông báo về những thay đổi quan trọng bằng cách đăng chính sách mới trên trang này."
     },
     "contact": {
       "title": "Liên hệ",
       "content": "Nếu bạn có bất kỳ câu hỏi nào về chính sách bảo mật này, bạn có thể liên hệ với chúng tôi qua:"
     },
     "acceptance": {
-      "title": "Acceptance",
-      "content": "By using openvid, you also accept our <terms>Terms of Service</terms>.",
-      "termsLink": "Terms of Service"
+      "title": "Chấp nhận",
+      "content": "Bằng việc sử dụng openvid, bạn cũng đồng ý với <terms>Điều khoản dịch vụ</terms> của chúng tôi.",
+      "termsLink": "Điều khoản dịch vụ"
     }
   },
   "terms": {
@@ -131,177 +131,176 @@
       "title": "2. Mô tả dịch vụ",
       "content": "openvid là một trình chỉnh sửa video trực tuyến cho phép người dùng ghi màn hình, áp dụng hiệu ứng thu phóng (zoom), sử dụng mockup 3D và xuất video chất lượng cao mà không có hình mờ (watermark).",
       "items": [
-        "Record the screen directly from the browser",
-        "Edit videos with professional tools",
-        "Export in multiple formats and qualities",
-        "Process everything locally without servers"
+        "Ghi màn hình trực tiếp từ trình duyệt",
+        "Chỉnh sửa video với công cụ chuyên nghiệp",
+        "Xuất video với nhiều định dạng và chất lượng",
+        "Xử lý mọi thứ cục bộ, không cần máy chủ"
       ]
     },
     "account": {
-      "title": "User Account",
-      "content": "To access certain features, you may need to create an account through:",
+      "title": "Tài khoản người dùng",
+      "content": "Để truy cập một số tính năng, bạn có thể cần tạo tài khoản thông qua:",
       "items": [
-        "Google authentication",
-        "GitHub authentication"
+        "Xác thực Google",
+        "Xác thực GitHub"
       ],
-      "note": "You are responsible for maintaining the confidentiality of your account."
+      "note": "Bạn chịu trách nhiệm bảo mật tài khoản của mình."
     },
     "acceptable": {
-      "title": "Acceptable Use",
-      "content": "By using openvid, you agree to:",
+      "title": "Sử dụng chấp nhận được",
+      "content": "Khi sử dụng openvid, bạn đồng ý:",
       "items": [
-        "Not upload illegal, offensive, or copyright-infringing content",
-        "Not attempt to compromise the service's security",
-        "Not use the platform for fraudulent activities",
-        "Respect the rights of other users"
+        "Không tải lên nội dung bất hợp pháp, xúc phạm hoặc vi phạm bản quyền",
+        "Không cố gắng xâm phạm bảo mật dịch vụ",
+        "Không sử dụng nền tảng cho các hoạt động gian lận",
+        "Tôn trọng quyền của người dùng khác"
       ]
     },
     "intellectual": {
-      "title": "Intellectual Property",
-      "content": "You retain all rights to the content you upload to openvid. We only process your videos temporarily to provide the editing service. We do not store or share your content without your explicit consent."
+      "title": "Sở hữu trí tuệ",
+      "content": "Bạn giữ toàn bộ quyền đối với nội dung bạn tải lên openvid. Chúng tôi chỉ xử lý nội dung của bạn để cung cấp dịch vụ."
     },
     "limitation": {
       "title": "6. Giới hạn trách nhiệm",
       "content": "Trong mọi trường hợp, openvid hoặc các nhà phát triển của nó sẽ không chịu trách nhiệm đối với bất kỳ thiệt hại gián tiếp, ngẫu nhiên, đặc biệt hoặc do hậu quả nào phát sinh từ việc bạn sử dụng dịch vụ.",
       "items": [
-        "Loss of data or content",
-        "Service interruptions",
-        "Indirect or consequential damages",
-        "Browser compatibility issues"
+        "Mất dữ liệu hoặc nội dung",
+        "Gián đoạn dịch vụ",
+        "Thiệt hại gián tiếp hoặc do hậu quả"
       ]
     },
     "modifications": {
-      "title": "Service Modifications",
-      "content": "We reserve the right to modify, suspend, or discontinue the service at any time without prior notice. We may also update these terms periodically."
+      "title": "Sửa đổi dịch vụ",
+      "content": "Chúng tôi có quyền thay đổi, tạm ngừng hoặc ngừng cung cấp dịch vụ bất kỳ lúc nào mà không cần thông báo trước."
     },
     "law": {
-      "title": "Applicable Law",
-      "content": "These terms are governed by the applicable laws in your jurisdiction. Any disputes will be resolved in the competent courts."
+      "title": "Luật áp dụng",
+      "content": "Các điều khoản này được điều chỉnh bởi luật pháp hiện hành tại khu vực của bạn. Mọi tranh chấp sẽ được giải quyết theo thẩm quyền tương ứng."
     },
     "contact": {
       "title": "8. Liên hệ",
       "content": "Nếu bạn có bất kỳ câu hỏi nào về các điều khoản này, vui lòng liên hệ với chúng tôi."
     },
     "acceptance2": {
-      "content": "By using openvid, you also accept our <privacy>Privacy Policy</privacy>.",
-      "privacyLink": "Privacy Policy"
+      "content": "Bằng việc sử dụng openvid, bạn cũng chấp nhận <privacy>Chính sách bảo mật</privacy> của chúng tôi.",
+      "privacyLink": "Chính sách bảo mật"
     }
   },
   "hero": {
-    "title": "Tạo video demo chuyên nghiệp trong vài giây",
-    "titleHighlight": "hoàn toàn miễn phí",
+    "title": "Tạo demo và <screen>màn hình</screen>",
+    "titleHighlight": "chất lượng 4K",
     "description": "Ghi màn hình, tự động zoom thông minh, mockup thiết bị 3D và xuất video 4K sắc nét. Mọi thứ xử lý trực tiếp trên trình duyệt, không gắn watermark.",
-    "uploadButton": "Upload video",
-    "uploadButtonDragging": "Drop your video here",
-    "uploadButtonUploading": "Uploading...",
-    "recordButton": "Record screen",
-    "uploadHint": "Drag a video or click to select",
-    "goToVideoEditor": "Go to video editor",
-    "uploadPhotoButton": "Upload photo",
-    "uploadPhotoDragging": "Drop your photo here",
-    "uploadPhotoUploading": "Uploading...",
-    "goToPhotoEditor": "Go to photo editor"
+    "uploadButton": "Tải video lên",
+    "uploadButtonDragging": "Thả video vào đây",
+    "uploadButtonUploading": "Đang tải lên...",
+    "recordButton": "Ghi màn hình",
+    "uploadHint": "Kéo video hoặc bấm để chọn",
+    "goToVideoEditor": "Vào trình chỉnh sửa video",
+    "uploadPhotoButton": "Tải ảnh lên",
+    "uploadPhotoDragging": "Thả ảnh vào đây",
+    "uploadPhotoUploading": "Đang tải lên...",
+    "goToPhotoEditor": "Vào trình chỉnh sửa ảnh"
   },
   "recording": {
     "steps": {
-      "title": "Create your shot in",
-      "title2": "four easy steps",
-      "subtitle": "Follow these instructions to capture your screen. The whole process happens in your browser, no installation required.",
+      "title": "Tạo video của bạn trong",
+      "title2": "bốn bước đơn giản",
+      "subtitle": "Làm theo hướng dẫn dưới đây để ghi màn hình. Toàn bộ quy trình diễn ra ngay trên trình duyệt, không cần cài đặt phần mềm.",
       "step1": {
-        "title": "Start capturing",
-        "description": "Click the button below. Your browser will ask you what you want to share. For optimal performance and cleaner shots, we recommend selecting a <tab>Tab</tab> or <window>Specific window</window>.",
-        "startButton": "Start recording",
-        "stopButton": "Stop recording",
-        "countdownButton": "Preparing...",
-        "recordingButton": "Recording...",
-        "processingButton": "Processing...",
-        "mobileAlert": "Screen recording is not available on mobile devices. Please use a desktop computer.",
-        "permissionRequired": "Permission required",
+        "title": "Bắt đầu ghi hình",
+        "description": "Bấm nút bên dưới. Trình duyệt sẽ hỏi bạn muốn chia sẻ nội dung nào. Để có hiệu suất tốt nhất, chúng tôi khuyên bạn chọn <tab>Tab</tab> hoặc <window>Cửa sổ cụ thể</window>.",
+        "startButton": "Bắt đầu ghi hình",
+        "stopButton": "Dừng ghi hình",
+        "countdownButton": "Đang chuẩn bị...",
+        "recordingButton": "Đang ghi hình...",
+        "processingButton": "Đang xử lý...",
+        "mobileAlert": "Tính năng ghi màn hình không khả dụng trên thiết bị di động. Vui lòng sử dụng máy tính.",
+        "permissionRequired": "Cần cấp quyền",
         "visual": {
-          "browserTab": "Brave Tab",
-          "window": "Window",
-          "fullscreen": "Entire screen",
-          "tabTitle": "openvid - Create shots...",
+          "browserTab": "Tab trình duyệt",
+          "window": "Cửa sổ",
+          "fullscreen": "Toàn màn hình",
+          "tabTitle": "openvid - Tạo video...",
           "codeTitle": "RecordingSteps.tsx",
-          "shareAudio": "Also share system audio",
-          "share": "Share",
-          "cancel": "Cancel"
+          "shareAudio": "Chia sẻ cả âm thanh hệ thống",
+          "share": "Chia sẻ",
+          "cancel": "Hủy"
         }
       },
       "step2": {
-        "title": "Hide distractions",
-        "description": "When sharing your screen, your browser will automatically show a floating bar notifying that the capture is active. Click <hide>Hide</hide> to make sure it doesn't appear in your final video.",
+        "title": "Ẩn yếu tố gây mất tập trung",
+        "description": "Khi chia sẻ màn hình, trình duyệt sẽ tự động hiển thị thanh thông báo. Bấm <hide>Ẩn</hide> để đảm bảo thanh này không xuất hiện trong video cuối cùng.",
         "visual": {
-          "barText": "https://openvid.dev is sharing a window.",
-          "stop": "Stop sharing",
-          "hide": "Hide"
+          "barText": "https://openvid.dev đang chia sẻ một cửa sổ.",
+          "stop": "Dừng chia sẻ",
+          "hide": "Ẩn"
         }
       },
       "step3": {
-        "title": "Get ready for action",
-        "description": "No rush. Once you approve the permissions in step 1, we will start a <countdown>3-second</countdown> countdown. You will see the indicator in the browser tab so you know exactly when to start speaking or moving the mouse.",
+        "title": "Sẵn sàng hành động",
+        "description": "Không vội. Sau khi bạn cấp quyền ở bước 1, chúng tôi sẽ bắt đầu đếm ngược <countdown>3 giây</countdown>. Bạn sẽ thấy chỉ báo trên tab trình duyệt để biết chính xác khi nào nên bắt đầu.",
         "visual": {
-          "title": "Switch tabs!",
-          "subtitle": "The recording will start on the screen you selected."
+          "title": "Chuyển tab ngay!",
+          "subtitle": "Việc ghi hình sẽ bắt đầu trên màn hình bạn đã chọn."
         }
       },
       "step4": {
-        "title": "Cut and to the editor",
-        "description": "When you finish your explanation, simply stop the recording. The file will not be downloaded immediately; it will magically move to our web editor so you can apply zooms, backgrounds, and crops.",
+        "title": "Cắt và vào trình chỉnh sửa",
+        "description": "Khi bạn hoàn thành, chỉ cần dừng ghi hình. Tệp sẽ không được tải xuống ngay; nó sẽ tự động chuyển đến trình chỉnh sửa web để bạn có thể áp dụng zoom, nền và cắt xén.",
         "visual": {
-          "recording": "Grabando",
-          "stop": "Stop"
+          "recording": "Đang ghi hình",
+          "stop": "Dừng"
         }
       }
     },
     "overlay": {
       "countdown": {
-        "title": "Switch tabs now!",
-        "subtitle": "Recording will start on the screen you selected."
+        "title": "Chuyển tab ngay!",
+        "subtitle": "Việc ghi hình sẽ bắt đầu trên màn hình bạn đã chọn."
       },
       "recording": {
-        "status": "Recording",
-        "stop": "Stop"
+        "status": "Đang ghi hình",
+        "stop": "Dừng"
       },
       "processing": {
-        "title": "Processing your recording",
-        "subtitle": "Preparing your video for the editor..."
+        "title": "Đang xử lý bản ghi của bạn",
+        "subtitle": "Đang chuẩn bị video cho trình chỉnh sửa..."
       }
     }
   },
   "login": {
     "title": "Đăng nhập",
     "subtitle": "Đăng nhập vào tài khoản của bạn để quản lý dự án",
-    "backToHome": "Back to home",
-    "disclaimer": "By continuing, you accept our <terms>Terms of Service</terms> and <privacy>Privacy Policy</privacy>.",
+    "backToHome": "Quay lại trang chủ",
+    "disclaimer": "Bằng việc tiếp tục, bạn đồng ý với <terms>Điều khoản dịch vụ</terms> và <privacy>Chính sách bảo mật</privacy> của chúng tôi.",
     "providers": {
-      "google": "Continue with Google",
-      "github": "Continue with GitHub",
-      "twitch": "Continue with Twitch",
-      "groupLabel": "Sign in options",
-      "loading": "Connecting..."
+      "google": "Tiếp tục với Google",
+      "github": "Tiếp tục với GitHub",
+      "twitch": "Tiếp tục với Twitch",
+      "groupLabel": "Tùy chọn đăng nhập",
+      "loading": "Đang kết nối..."
     },
     "errors": {
-      "generic": "Error signing in. Please try again.",
-      "signIn": "Error signing in with {provider}"
+      "generic": "Lỗi đăng nhập. Vui lòng thử lại.",
+      "signIn": "Lỗi đăng nhập với {provider}"
     }
   },
   "placeholder": {
     "browserBar": {
-      "newTab": "New tab",
-      "search": "Search or type a URL"
+      "newTab": "Tab mới",
+      "search": "Tìm kiếm hoặc nhập URL"
     },
     "upload": {
-      "title": "Click to upload",
-      "subtitle": "or drag your video",
-      "dragging": "Drop the video here!",
-      "button": "Select file",
-      "uploading": "Uploading...",
-      "formats": "MP4, WebM, MOV or MKV",
-      "titleImage": "Click to upload",
-      "subtitleImage": "or drag your image",
-      "draggingImage": "Drop the image here!",
-      "formatsImage": "JPG, PNG, WebP or GIF"
+      "title": "Bấm để tải lên",
+      "subtitle": "hoặc kéo video của bạn",
+      "dragging": "Thả video vào đây!",
+      "button": "Chọn tệp",
+      "uploading": "Đang tải lên...",
+      "formats": "MP4, WebM, MOV hoặc MKV",
+      "titleImage": "Bấm để tải lên",
+      "subtitleImage": "hoặc kéo ảnh của bạn",
+      "draggingImage": "Thả ảnh vào đây!",
+      "formatsImage": "JPG, PNG, WebP hoặc GIF"
     }
   },
   "notFound": {
@@ -310,20 +309,20 @@
     "backHome": "Về trang chủ"
   },
   "userMenu": {
-    "login": "Sign in",
-    "connectedWith": "Connected with {provider}",
-    "home": "Home",
-    "editor": "Editor",
-    "videoEditor": "Go to video editor",
-    "photoEditor": "Go to photo editor",
+    "login": "Đăng nhập",
+    "connectedWith": "Đã kết nối với {provider}",
+    "home": "Trang chủ",
+    "editor": "Trình chỉnh sửa",
+    "videoEditor": "Vào trình chỉnh sửa video",
+    "photoEditor": "Vào trình chỉnh sửa ảnh",
     "logout": "Đăng xuất",
-    "loggingOut": "Signing out...",
-    "ariaLabel": "User menu",
-    "defaultUser": "User",
+    "loggingOut": "Đang đăng xuất...",
+    "ariaLabel": "Menu người dùng",
+    "defaultUser": "Người dùng",
     "theme": "Giao diện",
-    "themeLight": "Light",
-    "themeDark": "Dark",
-    "themeSystem": "System"
+    "themeLight": "Sáng",
+    "themeDark": "Tối",
+    "themeSystem": "Hệ thống"
   },
   "donation": {
     "title": "Ủng hộ dự án openvid",
@@ -331,351 +330,351 @@
     "page": {
       "title": "Ủng hộ dự án",
       "description": "Hỗ trợ phát triển openvid",
-      "backHome": "Back to Home",
-      "methods": "Methods",
-      "copy": "Copy",
-      "copied": "Copied",
-      "scanQR": "Scan QR Code",
-      "close": "Close",
-      "alternative": "or alternatively",
-      "openLink": "Open direct payment link",
+      "backHome": "Quay lại trang chủ",
+      "methods": "Phương thức",
+      "copy": "Sao chép",
+      "copied": "Đã sao chép",
+      "scanQR": "Quét mã QR",
+      "close": "Đóng",
+      "alternative": "hoặc thay thế",
+      "openLink": "Mở liên kết thanh toán trực tiếp",
       "yape": {
         "tagline": "Chuyển khoản nhanh",
         "detail": "Quét mã QR hoặc chuyển khoản qua số điện thoại",
-        "phone": "Phone number"
+        "phone": "Số điện thoại"
       },
       "visa": {
         "tagline": "Thẻ tín dụng / Ghi nợ",
         "detail": "Chuyển khoản ngân hàng trực tiếp",
-        "account": "BCP Account (Soles)",
+        "account": "Tài khoản BCP (Soles)",
         "cci": "CCI"
       },
       "paypal": {
         "tagline": "Ủng hộ qua PayPal",
         "detail": "Thanh toán an toàn toàn cầu",
-        "email": "PayPal email",
+        "email": "Email PayPal",
         "link": "https://www.paypal.com/ncp/payment/AZ3LS98LJ9SM2"
       }
     }
   },
   "demo": {
-    "title": "Xem bản trình diễn",
-    "subtitle": "designed in seconds"
+    "title": "Demo",
+    "subtitle": "thiết kế trong vài giây"
   },
   "recordingSetup": {
-    "title": "Cài đặt ghi màn hình",
-    "description": "Choose your camera, microphone, and how you want your bubble to look.",
-    "close": "Close",
+    "title": "Thiết lập ghi hình",
+    "description": "Chọn camera, micro và cách hiển thị bong bóng webcam.",
+    "close": "Đóng",
     "preview": {
-      "initialPosition": "Initial position"
+      "initialPosition": "Vị trí ban đầu"
     },
     "camera": {
       "title": "Camera",
-      "description": "Add a bubble with your webcam.",
-      "permissionDenied": "Camera access denied. Hover here to see how to fix it.",
-      "errorGeneric": "Could not access the camera. Check your connection.",
-      "selectPlaceholder": "Select camera",
-      "default": "Default camera",
-      "shape": "Shape",
-      "size": "Size",
-      "mirror": "Mirror horizontally"
+      "description": "Thêm bong bóng webcam.",
+      "permissionDenied": "Quyền truy cập camera bị từ chối. Di chuột vào đây để xem cách khắc phục.",
+      "errorGeneric": "Không thể truy cập camera. Kiểm tra kết nối.",
+      "selectPlaceholder": "Chọn camera",
+      "default": "Camera mặc định",
+      "shape": "Hình dạng",
+      "size": "Kích thước",
+      "mirror": "Lật ngang"
     },
     "mic": {
-      "title": "Microphone",
-      "description": "Record your voice on the same track.",
-      "errorGeneric": "Could not access the microphone.",
-      "selectPlaceholder": "Select microphone",
-      "default": " microphone"
+      "title": "Micro",
+      "description": "Ghi giọng nói cùng kênh.",
+      "errorGeneric": "Không thể truy cập micro.",
+      "selectPlaceholder": "Chọn micro",
+      "default": " micro"
     },
     "systemAudio": {
-      "title": "System Audio",
-      "description": "Capture audio from the shared tab or window."
+      "title": "Âm thanh hệ thống",
+      "description": "Ghi âm thanh từ tab hoặc cửa sổ đang chia sẻ."
     },
     "actions": {
-      "cancel": "Cancel",
-      "shareScreen": "Share screen"
+      "cancel": "Hủy",
+      "shareScreen": "Chia sẻ màn hình"
     },
     "shapes": {
-      "circle": "Circle",
-      "squircle": "Squircle",
-      "square": "Square"
+      "circle": "Tròn",
+      "squircle": "Bo vuông",
+      "square": "Vuông"
     },
     "corners": {
-      "top-left": "Top left",
-      "top-right": "Top right",
-      "bottom-left": "Bottom left",
-      "bottom-right": "Bottom right"
+      "top-left": "Trên trái",
+      "top-right": "Trên phải",
+      "bottom-left": "Dưới trái",
+      "bottom-right": "Dưới phải"
     },
-    "drag": "Drag"
+    "drag": "Kéo"
   },
   "controlPanel": {
     "header": {
-      "close": "Close control panel"
+      "close": "Đóng bảng điều khiển"
     },
     "screenshot": {
-      "background": "Background",
+      "background": "Nền",
       "tabs": {
-        "wallpaper": "Wallpaper",
-        "color": "Color",
-        "image": "Image"
+        "wallpaper": "Hình nền",
+        "color": "Màu sắc",
+        "image": "Ảnh"
       },
-      "options": "Options",
-      "settings": "Settings",
+      "options": "Tùy chọn",
+      "settings": "Cài đặt",
       "sliders": {
-        "blur": "Background blur",
-        "padding": "Padding",
-        "rounded": "Rounded corners",
-        "shadows": "Shadows"
+        "blur": "Độ mờ nền",
+        "padding": "Khoảng đệm",
+        "rounded": "Bo góc",
+        "shadows": "Bóng đổ"
       }
     },
     "tools": {
       "mockup": "Mockup",
       "videos": "Video",
-      "elements": "Elements",
-      "audio": "Audio",
-      "zoom": "Zoom",
-      "cursor": "Cursor",
+      "elements": "Phần tử",
+      "audio": "Âm thanh",
+      "zoom": "Thu phóng",
+      "cursor": "Con trỏ",
       "camera": "Camera"
     }
   },
   "toolsSidebar": {
     "tools": {
-      "background": "Background",
+      "background": "Nền",
       "mockup": "Mockup",
       "videos": "Video",
-      "elements": "Elements",
-      "audio": "Audio",
-      "zoom": "Zoom",
+      "elements": "Phần tử",
+      "audio": "Âm thanh",
+      "zoom": "Thu phóng",
       "camera": "Camera",
-      "cursor": "Cursor",
-      "toolbar": "Tools toolbar",
-      "soon": "Soon",
-      "motion": "Motion",
-      "newTool": "New"
+      "cursor": "Con trỏ",
+      "toolbar": "Thanh công cụ",
+      "soon": "Sắp có",
+      "motion": "Chuyển động",
+      "newTool": "Mới"
     },
     "popovers": {
       "background": {
-        "title": "Backgrounds & Canvas",
-        "description": "Add gradients, colors, or images"
+        "title": "Hình nền & Canvas",
+        "description": "Thêm chuyển sắc, màu sắc hoặc hình ảnh"
       },
       "mockup": {
-        "title": "Mockup Generator",
-        "description": "Wrap your captures in browsers, mobile devices, or IDEs"
+        "title": "Tạo Mockup",
+        "description": "Bọc ảnh chụp trong trình duyệt, thiết bị di động hoặc IDE"
       },
       "videos": {
-        "title": "Import Videos",
-        "description": "Upload your screen recordings or clips"
+        "title": "Nhập Video",
+        "description": "Tải lên bản ghi màn hình hoặc clip"
       },
       "elements": {
-        "title": "Elements & Annotations",
-        "description": "Add arrows, geometric shapes, text, or highlighters"
+        "title": "Phần tử & Chú thích",
+        "description": "Thêm mũi tên, hình dạng, văn bản hoặc bút đánh dấu"
       },
       "audio": {
-        "title": "Tracks & Effects",
-        "description": "Sync background music tracks or sound effects"
+        "title": "Kênh & Hiệu ứng",
+        "description": "Đồng bộ nhạc nền hoặc hiệu ứng âm thanh"
       },
       "zoom": {
-        "title": "Dynamic Zoom",
-        "description": "Create smooth close-ups on specific parts of the screen to guide the viewer's attention."
+        "title": "Zoom Động",
+        "description": "Tạo cận cảnh mượt mà trên các phần cụ thể của màn hình để hướng dẫn người xem."
       },
       "camera": {
-        "title": "On-screen Camera",
-        "description": "Overlay your webcam recording with circular crops"
+        "title": "Camera trên màn hình",
+        "description": "Phủ lên webcam với khung tròn"
       },
       "history": {
-        "title": "Image History",
-        "description": "Access your previous captures to reuse or edit them."
+        "title": "Lịch sử ảnh",
+        "description": "Truy cập ảnh chụp trước đó để tái sử dụng hoặc chỉnh sửa."
       },
       "motion": {
-        "title": "Motion Effects",
-        "description": "Apply smooth transitions and animations to your elements."
+        "title": "Hiệu ứng chuyển động",
+        "description": "Áp dụng chuyển tiếp mượt và hiệu ứng cho phần tử."
       }
     },
     "recording": {
-      "idle": "Record screen",
-      "inProgress": "Recording in progress...",
-      "preparing": "Preparing...",
-      "recording": "Recording...",
-      "processing": "Processing...",
-      "start": "Record"
+      "idle": "Ghi màn hình",
+      "inProgress": "Đang ghi hình...",
+      "preparing": "Đang chuẩn bị...",
+      "recording": "Đang ghi hình...",
+      "processing": "Đang xử lý...",
+      "start": "Ghi hình"
     },
     "upload": {
-      "tooltip": "Upload custom video",
-      "tooltipUploading": "Uploading video...",
-      "button": "Upload",
-      "buttonUploading": "Uploading...",
-      "dropHere": "Drop here"
+      "tooltip": "Tải video tùy chỉnh",
+      "tooltipUploading": "Đang tải video...",
+      "button": "Tải lên",
+      "buttonUploading": "Đang tải lên...",
+      "dropHere": "Thả vào đây"
     },
     "alerts": {
-      "mobile": "Screen capture is not supported on mobile. Use your computer."
+      "mobile": "Ghi màn hình không hỗ trợ trên di động. Vui lòng dùng máy tính."
     },
     "photo": {
-      "captureTooltip": "Capture image",
-      "capturing": "Capturing image...",
-      "capture": "Capture",
-      "uploadTooltip": "Upload custom image",
-      "upload": "Upload",
-      "libraryTooltip": "Your images",
-      "library": "Library",
-      "dropHere": "Drop hereks"
+      "captureTooltip": "Chụp ảnh",
+      "capturing": "Đang chụp ảnh...",
+      "capture": "Chụp",
+      "uploadTooltip": "Tải ảnh tùy chỉnh",
+      "upload": "Tải lên",
+      "libraryTooltip": "Ảnh của bạn",
+      "library": "Thư viện",
+      "dropHere": "Thả vào đây"
     },
     "imagesLibrary": {
-      "title": "My Images",
-      "project": "project",
-      "projects": "projects",
-      "loading": "Loading library...",
-      "current": "Current",
-      "delete": "Delete",
-      "confirmDelete": "Confirm?",
+      "title": "Ảnh của tôi",
+      "project": "dự án",
+      "projects": "dự án",
+      "loading": "Đang tải thư viện...",
+      "current": "Hiện tại",
+      "delete": "Xóa",
+      "confirmDelete": "Xác nhận?",
       "empty": {
-        "title": "Library empty",
-        "description": "Your image projects will appear here once you save them."
+        "title": "Thư viện trống",
+        "description": "Dự án ảnh sẽ hiện ở đây khi bạn lưu."
       },
       "time": {
-        "justNow": "Just now",
-        "minutesAgo": "{count, plural, =1 {1 minute ago} other {# minutes ago}}",
-        "hoursAgo": "{count, plural, =1 {1 hour ago} other {# hours ago}}",
-        "daysAgo": "{count, plural, =1 {1 day ago} other {# days ago}}"
+        "justNow": "Vừa xong",
+        "minutesAgo": "{count, plural, =1 {1 phút trước} other {# phút trước}}",
+        "hoursAgo": "{count, plural, =1 {1 giờ trước} other {# giờ trước}}",
+        "daysAgo": "{count, plural, =1 {1 ngày trước} other {# ngày trước}}"
       }
     }
   },
   "historyMenu": {
-    "title": "Lịch sử chỉnh sửa",
-    "items": "images",
-    "loading": "Loading history...",
+    "title": "Lịch sử",
+    "items": "ảnh",
+    "loading": "Đang tải lịch sử...",
     "upload": {
-      "drop": "Drop image here",
-      "dragOrClick": "Drag or click to upload"
+      "drop": "Thả ảnh vào đây",
+      "dragOrClick": "Kéo hoặc bấm để tải lên"
     },
     "empty": {
-      "title": "No images yet",
-      "description": "Upload or capture images to see them here"
+      "title": "Chưa có ảnh",
+      "description": "Tải hoặc chụp ảnh để xem tại đây"
     },
     "time": {
-      "justNow": "Just now",
-      "hoursAgo": "{hours, plural, =1 {1 hour ago} other {# hours ago}}",
-      "yesterday": "Yesterday",
-      "daysAgo": "{days, plural, =1 {1 day ago} other {# days ago}}"
+      "justNow": "Vừa xong",
+      "hoursAgo": "{hours, plural, =1 {1 giờ trước} other {# giờ trước}}",
+      "yesterday": "Hôm qua",
+      "daysAgo": "{days, plural, =1 {1 ngày trước} other {# ngày trước}}"
     },
     "actions": {
-      "delete": "Delete from history"
+      "delete": "Xóa khỏi lịch sử"
     }
   },
   "wallpapers": {
     "categories": {
-      "desktop": "Desktop",
-      "gradient": "Gradients",
-      "pattern": "Patterns",
-      "minimal": "Minimalist"
+      "desktop": "Máy tính",
+      "gradient": "Chuyển sắc",
+      "pattern": "Mẫu hoa văn",
+      "minimal": "Tối giản"
     },
     "options": {
-      "none": "No background",
-      "showMore": "Show more",
-      "showLess": "Show less",
-      "upload": "Upload image"
+      "none": "Không có nền",
+      "showMore": "Xem thêm",
+      "showLess": "Thu gọn",
+      "upload": "Tải ảnh lên"
     },
     "popover": {
-      "seeMore": "See more from {name}",
-      "moreCount": "+{count} more"
+      "seeMore": "Xem thêm từ {name}",
+      "moreCount": "+{count} khác"
     }
   },
   "colorEditor": {
     "modes": {
-      "gradient": "Gradient",
-      "solid": "Solid"
+      "gradient": "Chuyển sắc",
+      "solid": "Đơn sắc"
     },
     "sections": {
-      "presets": "Presets",
-      "customize": "Customize",
-      "moreColors": "More colors",
-      "moreGradients": "More {type} gradients",
-      "type": "Type",
-      "angle": "Angle",
-      "originX": "Origin X",
-      "originY": "Origin Y",
-      "stops": "Colors ({count})",
-      "add": "Add"
+      "presets": "Mẫu có sẵn",
+      "customize": "Tùy chỉnh",
+      "moreColors": "Thêm màu",
+      "moreGradients": "Thêm chuyển sắc {type}",
+      "type": "Loại",
+      "angle": "Góc",
+      "originX": "Gốc X",
+      "originY": "Gốc Y",
+      "stops": "Màu sắc ({count})",
+      "add": "Thêm"
     },
     "tooltips": {
-      "moreColors": "See more colors",
-      "moreGradients": "See more gradients"
+      "moreColors": "Xem thêm màu",
+      "moreGradients": "Xem thêm chuyển sắc"
     },
     "types": {
-      "linear": "Linear",
-      "radial": "Radial",
-      "conic": "Conic"
+      "linear": "Tuyến tính",
+      "radial": "Hình tia",
+      "conic": "Hình nón"
     }
   },
   "imageRecentGrid": {
     "upload": {
-      "instruction": "Drag an image here or",
-      "action": "upload a file"
+      "instruction": "Kéo ảnh vào đây hoặc",
+      "action": "tải tệp lên"
     },
     "sections": {
-      "recent": "Recent"
+      "recent": "Gần đây"
     },
     "alt": {
-      "recent": "Recent {index}"
+      "recent": "Gần đây {index}"
     }
   },
   "mockupMenu": {
     "title": "Khung thiết bị Mockup",
-    "windowType": "Window type",
+    "windowType": "Loại cửa sổ",
     "none": "Không dùng khung",
-    "suggested": "Suggested",
-    "count": "{count} mockups",
-    "remove": "Remove mockup",
-    "frames2D": "2D Frames",
-    "devices3D": "3D Devices",
-    "device3DTitle": "3D Device",
-    "configuration": "Configuration",
-    "reset": "Reset",
-    "scale": "Scale",
-    "laptopOpening": "Laptop opening",
-    "shadow": "Shadow",
-    "position": "Position",
-    "removeFrame": "Remove frame",
+    "suggested": "Gợi ý",
+    "count": "{count} mockup",
+    "remove": "Xóa",
+    "frames2D": "Khung 2D",
+    "devices3D": "Thiết bị 3D",
+    "device3DTitle": "Thiết bị 3D",
+    "configuration": "Cấu hình",
+    "reset": "Đặt lại",
+    "scale": "Tỉ lệ",
+    "laptopOpening": "Độ mở laptop",
+    "shadow": "Bóng",
+    "position": "Vị trí",
+    "removeFrame": "Xóa khung",
     "darkMode": {
-      "label": "Dark mode",
-      "dark": "Dark",
-      "light": "Light"
+      "label": "Chế độ tối",
+      "dark": "Tối",
+      "light": "Sáng"
     },
     "frameColor": {
-      "label": "Frame color",
-      "ariaLabel": "Select color {color}"
+      "label": "Màu khung",
+      "ariaLabel": "Chọn màu {color}"
     },
     "url": {
-      "label": "Page URL",
-      "placeholder": "https://your-site.com"
+      "label": "URL trang",
+      "placeholder": "https://trang-web.com"
     },
     "sliders": {
-      "headerScale": "Header scale",
-      "headerOpacity": "Header opacity"
+      "headerScale": "Tỉ lệ header",
+      "headerOpacity": "Độ mờ header"
     },
     "categories": {
-      "all": "All",
-      "browser": "Browser",
-      "device": "Mobile",
-      "ide": "Code Editor"
+      "all": "Tất cả",
+      "browser": "Trình duyệt",
+      "device": "Di động",
+      "ide": "Trình soạn mã"
     },
     "mockups": {
-      "none": "None",
+      "none": "Không có",
       "macos": "MacOS",
-      "macos-glass": "MacOS Glass",
-      "outline": "Outline",
-      "glass-ui-container": "Glass UI Container",
+      "macos-glass": "MacOS Kính",
+      "outline": "Đường viền",
+      "glass-ui-container": "Khung kính UI",
       "macos-ghost": "MacOS Ghost",
-      "macos-ghost-glass": "MacOS Ghost Glass",
-      "macos-container-glass": "MacOS Container Glass",
+      "macos-ghost-glass": "MacOS Ghost Kính",
+      "macos-container-glass": "MacOS Khung kính",
       "brave": "Brave",
-      "brave-glass": "Brave Glass",
-      "browser-tab-glass": "Browser Tab Glass",
+      "brave-glass": "Brave Kính",
+      "browser-tab-glass": "Tab trình duyệt kính",
       "chrome": "Chrome",
-      "chrome-glass": "Chrome Glass",
+      "chrome-glass": "Chrome Kính",
       "iphone-slim": "iPhone Slim",
-      "glass-curve": "Glass Curve",
-      "glass-full": "Glass Full",
-      "hard-shell": "Hard Shell",
+      "glass-curve": "Kính cong",
+      "glass-full": "Kính toàn phần",
+      "hard-shell": "Vỏ cứng",
       "s24-ultra": "S24 Ultra",
       "vscode": "VS Code",
       "macos-dark-ide": "VS Code MacOS",
@@ -684,641 +683,641 @@
     },
     "devices": {
       "iphone-13-pro-max": "iPhone 13 Pro",
-      "double_iphone_13_pro": "Double iPhone 13 Pro",
+      "double_iphone_13_pro": "iPhone 13 Pro đôi",
       "iphone-17-pro-max": "iPhone 17 Pro",
       "iphone": "iPhone 15 Pro",
-      "phone": "Generic phone",
-      "laptop": "macOS Laptop",
+      "phone": "Điện thoại chung",
+      "laptop": "Laptop macOS",
       "ipad_mini_6_2021": "iPad mini 6 (2021)"
     },
     "positionPresets": {
-      "tooltip": "Default positions",
-      "trigger": "Perspective",
-      "title": "3D Positions",
-      "resetDefault": "Reset to default",
+      "tooltip": "Vị trí mặc định",
+      "trigger": "Phối cảnh",
+      "title": "Mockup thiết bị",
+      "resetDefault": "Đặt lại mặc định",
       "tabs": {
-        "presets": "Presets",
-        "custom": "Custom"
+        "presets": "Mẫu có sẵn",
+        "custom": "Tùy chỉnh"
       },
       "custom": {
-        "perspective": "Perspective",
-        "scale": "Scale",
-        "rotationXY": "Rotation X/Y",
-        "rotationZ": "Rotation Z",
-        "vertical": "Vertical",
-        "reset": "Reset"
+        "perspective": "Phối cảnh",
+        "scale": "Tỉ lệ",
+        "rotationXY": "Xoay X/Y",
+        "rotationZ": "Xoay Z",
+        "vertical": "Dọc",
+        "reset": "Đặt lại"
       }
     },
-    "viewer3d": "3D Viewer",
-    "autoRotate": "Auto-rotate",
-    "rotationSpeed": "Rotation speed",
-    "glow": "Glow",
-    "environment": "Environment",
+    "viewer3d": "Trình xem 3D",
+    "autoRotate": "Tự động xoay",
+    "rotationSpeed": "Tốc độ xoay",
+    "glow": "Phát sáng",
+    "environment": "Môi trường",
     "environments": {
-      "sunset": "Sunset",
-      "dawn": "Dawn",
-      "night": "Night",
-      "warehouse": "Warehouse",
-      "forest": "Forest",
-      "apartment": "Apartment",
+      "sunset": "Hoàng hôn",
+      "dawn": "Bình minh",
+      "night": "Ban đêm",
+      "warehouse": "Nhà kho",
+      "forest": "Rừng",
+      "apartment": "Căn hộ",
       "studio": "Studio",
-      "city": "City",
-      "park": "Park",
-      "lobby": "Lobby"
+      "city": "Thành phố",
+      "park": "Công viên",
+      "lobby": "Sảnh"
     },
-    "modelProperties": "Model Properties",
-    "lightingAndEnvironment": "Lighting & Environment",
-    "presentation": "Animation & Display"
+    "modelProperties": "Thuộc tính mô hình",
+    "lightingAndEnvironment": "Ánh sáng & Môi trường",
+    "presentation": "Hiệu ứng & Hiển thị"
   },
   "videosMenu": {
-    "title": "Quản lý Video",
-    "speed": "Speed",
-    "dropzone": "Drop your video here!",
+    "title": "Video",
+    "speed": "Tốc độ",
+    "dropzone": "Thả video vào đây!",
     "emptyState": {
-      "title": "Upload video",
-      "instruction": "Click or drag a file here"
+      "title": "Tải video lên",
+      "instruction": "Bấm hoặc kéo tệp vào đây"
     },
     "upload": {
-      "button": "Upload video",
-      "action": "Select file",
-      "status": "Uploading..."
+      "button": "Tải video lên",
+      "action": "Chọn tệp",
+      "status": "Đang tải lên..."
     },
     "actions": {
-      "add": "Add",
-      "mute": "Mute",
-      "unmute": "Unmute",
-      "delete": "Delete video"
+      "add": "Thêm",
+      "mute": "Tắt tiếng",
+      "unmute": "Bật tiếng",
+      "delete": "Xóa video"
     },
-    "footer": "Videos are stored locally in your browser"
+    "footer": "Video được lưu trữ cục bộ trên trình duyệt"
   },
   "elementsMenu": {
     "title": "Thêm yếu tố đồ họa",
     "tabs": {
-      "elements": "Elements",
-      "text": "Text",
-      "uploads": "Uploads"
+      "elements": "Phần tử",
+      "text": "Văn bản",
+      "uploads": "Tải lên"
     },
     "sections": {
-      "shapes": "Shapes",
-      "images": "Images",
-      "hierarchy": "Hierarchy"
+      "shapes": "Hình dạng",
+      "images": "Hình ảnh",
+      "hierarchy": "Phân cấp"
     },
     "filters": {
-      "all": "All"
+      "all": "Tất cả"
     },
     "counts": {
-      "shapes": "{count} shapes",
-      "images": "{count} images"
+      "shapes": "Hình dạng",
+      "images": "{count} ảnh"
     },
     "tooltips": {
-      "allShapes": "View all shapes",
-      "allImages": "View all images"
+      "allShapes": "Xem tất cả hình dạng",
+      "allImages": "Xem tất cả hình ảnh"
     },
     "properties": {
-      "color": "Color",
-      "size": "Size",
-      "opacity": "Opacity"
+      "color": "Màu sắc",
+      "size": "Kích thước",
+      "opacity": "Độ trong suốt"
     },
     "actions": {
-      "delete": "Delete",
-      "bringToFront": "Bring to front",
-      "sendToBack": "Send to back",
-      "deleteMultiple": "Delete selected ({count})"
+      "delete": "Xóa",
+      "bringToFront": "Đưa lên trước",
+      "sendToBack": "Đưa ra sau",
+      "deleteMultiple": "Xóa đã chọn ({count})"
     },
     "text": {
-      "content": "Content",
-      "placeholder": "Type your text...",
-      "presets": "Presets",
-      "size": "Size",
-      "font": "Font",
-      "weight": "Weight",
-      "addButton": "Add text"
+      "content": "Nội dung",
+      "placeholder": "Nhập văn bản...",
+      "presets": "Mẫu có sẵn",
+      "size": "Kích thước",
+      "font": "Phông chữ",
+      "weight": "Độ đậm",
+      "addButton": "Thêm văn bản"
     },
     "uploads": {
-      "title": "Upload images",
-      "instruction": "Click or drag a file here",
-      "uploading": "Uploading...",
-      "processing": "Processing images",
-      "selectFile": "Select file",
-      "gallery": "Your images ({count})",
-      "clearAll": "Clear all",
-      "emptyTitle": "No images yet",
-      "emptySubtitle": "Images you upload will appear here"
+      "title": "Phần tử",
+      "instruction": "Bấm hoặc kéo tệp vào đây",
+      "uploading": "Đang tải lên...",
+      "processing": "Đang xử lý ảnh",
+      "selectFile": "Chọn tệp",
+      "gallery": "Ảnh của bạn ({count})",
+      "clearAll": "Xóa tất cả",
+      "emptyTitle": "Chưa có ảnh",
+      "emptySubtitle": "Ảnh bạn tải lên sẽ hiện ở đây"
     }
   },
   "zoomFragmentEditor": {
     "title": "Chỉnh sửa đoạn Zoom",
-    "deleteTooltip": "Delete fragment (Delete)",
+    "deleteTooltip": "Xóa đoạn (Delete)",
     "actions": {
-      "delete": "Delete"
+      "delete": "Xóa"
     },
     "focusPoints": {
-      "single": "Focus point",
-      "multiple": "Focus points",
-      "start": "Start",
-      "end": "End"
+      "single": "Điểm tiêu điểm",
+      "multiple": "Các điểm tiêu điểm",
+      "start": "Bắt đầu",
+      "end": "Kết thúc"
     },
     "preview": {
-      "alt": "Video preview",
-      "dragAB": "Drag A and B",
-      "dragOrClick": "Drag or click",
-      "orbitalPath": "Autozoom cursor path"
+      "alt": "Xem trước video",
+      "dragAB": "Kéo A và B",
+      "dragOrClick": "Kéo hoặc bấm",
+      "orbitalPath": "Đường di chuột Autozoom"
     },
     "movement": {
-      "title": "Camera Movement",
-      "subtitle": "Panning during zoom",
-      "orbitalDescription": "Cursor trajectory generated by Autozoom. It is preserved during preview and export.",
-      "tooShort": "Fragment too short for movement. Increase duration.",
-      "defaultName": "Movement {number}",
+      "title": "Chỉnh sửa Zoom",
+      "subtitle": "Di chuyển khi zoom",
+      "orbitalDescription": "Quỹ đạo con trỏ được tạo bởi Autozoom. Được giữ nguyên khi xem trước và xuất.",
+      "tooShort": "Đoạn quá ngắn để chuyển động. Hãy tăng thời lượng.",
+      "defaultName": "Chuyển động {number}",
       "timeline": {
-        "title": "Movement Timeline",
-        "active": "{seconds}s active",
-        "startLabel": "START",
-        "endLabel": "END"
+        "title": "Chỉnh sửa Zoom",
+        "active": "{seconds}s đang hoạt động",
+        "startLabel": "Bắt đầu",
+        "endLabel": "Kết thúc"
       },
-      "addMovement": "Add point",
-      "deleteMovement": "Delete point"
+      "addMovement": "Thêm điểm",
+      "deleteMovement": "Xóa điểm"
     },
     "sliders": {
-      "zoomLevel": "Zoom level",
-      "transitionSpeed": "Transition speed"
+      "zoomLevel": "Mức zoom",
+      "transitionSpeed": "Tốc độ chuyển tiếp"
     },
     "info": {
-      "fragmentDuration": "Fragment duration",
-      "zoomFactor": "Zoom factor",
-      "transitionDuration": "Transition duration"
+      "fragmentDuration": "Thời lượng đoạn",
+      "zoomFactor": "Hệ số zoom",
+      "transitionDuration": "Thời lượng chuyển tiếp"
     }
   },
   "zoomGlobalConfig": {
     "title": "Cấu hình Zoom",
     "fragments": {
-      "title": "Fragments ({count})",
+      "title": "Cấu hình Zoom",
       "label": "Zoom {index}",
-      "add": "Add fragment"
+      "add": "Thêm đoạn"
     },
     "shortcuts": {
       "keys": {
-        "delete": "Delete",
+        "delete": "Xóa",
         "esc": "Esc",
-        "click": "Click"
+        "click": "Nhấp chuột"
       },
-      "delete": "Delete selected fragment",
-      "esc": "Deselect fragment",
-      "clickTrack": "Add fragment at position"
+      "delete": "Xóa đoạn đã chọn",
+      "esc": "Bỏ chọn đoạn",
+      "clickTrack": "Thêm đoạn tại vị trí"
     }
   },
   "cameraMenu": {
     "title": "Khung Camera Webcam",
     "noCamera": {
-      "title": "This recording does not include a camera.",
-      "description": "Enable the camera when starting a new recording to see it here."
+      "title": "Camera",
+      "description": "Bật camera khi bắt đầu ghi hình mới để xem tại đây."
     },
     "shape": "Hình dạng camera",
     "position": "Vị trí",
-    "customPosition": "Custom position (drag the camera on the canvas).",
+    "customPosition": "Vị trí tùy chỉnh (kéo camera trên canvas).",
     "size": "Kích thước",
-    "mirror": "Mirror (reflection)",
+    "mirror": "Lật gương",
     "shapes": {
-      "squircle": "Squircle",
-      "circle": "Circle",
-      "square": "Square"
+      "squircle": "Bo vuông",
+      "circle": "Tròn",
+      "square": "Vuông"
     },
     "corners": {
-      "top-left": "Top left",
-      "top-right": "Top right",
-      "bottom-left": "Bottom left",
-      "bottom-right": "Bottom right"
+      "top-left": "Trên trái",
+      "top-right": "Trên phải",
+      "bottom-left": "Dưới trái",
+      "bottom-right": "Dưới phải"
     }
   },
   "editor": {
     "topBar": {
       "exportError": {
-        "title": "Error exporting",
-        "tip": "Try playing the entire video length before exporting.",
-        "close": "Close alert"
+        "title": "Trình chỉnh sửa",
+        "tip": "Hãy thử phát toàn bộ video trước khi xuất.",
+        "close": "Đóng cảnh báo"
       },
       "history": {
-        "undo": "Undo (Ctrl+Z)",
-        "noUndo": "No actions to undo",
-        "redo": "Redo (Ctrl+Y)",
-        "noRedo": "No actions to redo"
+        "undo": "Hoàn tác (Ctrl+Z)",
+        "noUndo": "Không có hành động để hoàn tác",
+        "redo": "Làm lại (Ctrl+Y)",
+        "noRedo": "Không có hành động để làm lại"
       },
       "auth": {
-        "defaultUser": "User",
-        "signIn": "Sign In",
-        "userMenu": "User Menu",
-        "connectedWith": "Connected with {provider}",
-        "home": "Home",
-        "editor": "Editor",
-        "signOut": "Sign Out",
-        "signingOut": "Signing out...",
-        "access": "Access"
+        "defaultUser": "Người dùng",
+        "signIn": "Đăng nhập",
+        "userMenu": "Menu người dùng",
+        "connectedWith": "Đã kết nối với {provider}",
+        "home": "Trang chủ",
+        "editor": "Trình chỉnh sửa",
+        "signOut": "Đăng xuất",
+        "signingOut": "Đang đăng xuất...",
+        "access": "Truy cập"
       }
     },
     "export": {
-      "button": "Export",
-      "title": "Export Quality",
-      "recommended": "RECOMMENDED",
-      "noBackground": "transparent",
-      "solidBackground": "SOLID BACKGROUND",
-      "gifNotice": "Solid black background",
+      "button": "Xuất",
+      "title": "Trình chỉnh sửa",
+      "recommended": "ĐỀ XUẤT",
+      "noBackground": "trong suốt",
+      "solidBackground": "NỀN ĐƠN SẮC",
+      "gifNotice": "Nền đen đặc",
       "qualities": {
         "4k": {
-          "label": "4K Ultra HD",
-          "desc": "3840 × 2160 • Max fidelity"
+          "label": "Nhãn",
+          "desc": "Mô tả"
         },
         "2k": {
-          "label": "2K Quad HD",
-          "desc": "2560 × 1440 • Ideal balance"
+          "label": "Nhãn",
+          "desc": "Mô tả"
         },
         "1080p": {
-          "label": "1080p Full HD",
-          "desc": "1920 × 1080 • Web standard"
+          "label": "Nhãn",
+          "desc": "Mô tả"
         },
         "720p": {
-          "label": "720p HD",
-          "desc": "1280 × 720 • Small file"
+          "label": "Nhãn",
+          "desc": "Mô tả"
         },
         "480p": {
-          "label": "480p SD",
-          "desc": "854 × 480 • Draft quality"
+          "label": "Nhãn",
+          "desc": "Mô tả"
         },
         "gif": {
-          "label": "Animated GIF",
-          "desc": "1280 × 720 • Loop without audio"
+          "label": "Nhãn",
+          "desc": "Mô tả"
         }
       }
     },
     "photoMode": {
-      "title": "Image Editing Mode",
-      "description": "Adjust background, mockups and elements to customize your image",
-      "previewLabel": "3D Previews",
-      "views": "views"
+      "title": "Trình chỉnh sửa",
+      "description": "Điều chỉnh nền, mockup và phần tử để tùy chỉnh ảnh",
+      "previewLabel": "Xem trước 3D",
+      "views": "lượt xem"
     },
     "imagesLibrary": {
-      "title": "My Images",
-      "project": "project",
-      "projects": "projects",
-      "loading": "Loading library...",
-      "current": "Current",
-      "delete": "Delete",
-      "confirmDelete": "Confirm?",
+      "title": "Trình chỉnh sửa",
+      "project": "dự án",
+      "projects": "dự án",
+      "loading": "Đang tải thư viện...",
+      "current": "Hiện tại",
+      "delete": "Xóa",
+      "confirmDelete": "Xác nhận?",
       "empty": {
-        "title": "Empty library",
-        "description": "Your image projects will appear here once saved."
+        "title": "Trình chỉnh sửa",
+        "description": "Dự án ảnh sẽ hiện ở đây khi lưu."
       },
       "time": {
-        "justNow": "Just now",
-        "minutesAgo": "{count, plural, =1 {1 minute ago} other {# minutes ago}}",
-        "hoursAgo": "{count, plural, =1 {1 hour ago} other {# hours ago}}",
-        "daysAgo": "{count, plural, =1 {1 day ago} other {# days ago}}"
+        "justNow": "Vừa xong",
+        "minutesAgo": "{count, plural, =1 {1 phút trước} other {# phút trước}}",
+        "hoursAgo": "{count, plural, =1 {1 giờ trước} other {# giờ trước}}",
+        "daysAgo": "{count, plural, =1 {1 ngày trước} other {# ngày trước}}"
       }
     },
     "exportImage": {
-      "button": "Export",
-      "title": "Export Image",
-      "transparent": "Transparent",
-      "recommended": "Recommended",
-      "noTransparency": "No transparency",
-      "transparentInfo": "Transparent background is only kept in PNG and WebP formats.",
+      "button": "Xuất",
+      "title": "Trình chỉnh sửa",
+      "transparent": "Trong suốt",
+      "recommended": "ĐỀ XUẤT",
+      "noTransparency": "Không trong suốt",
+      "transparentInfo": "Nền trong suốt chỉ giữ được ở định dạng PNG và WebP.",
       "presets": {
         "png4x": {
-          "label": "PNG 4x (Ultra)"
+          "label": "Nhãn"
         },
         "png2x": {
-          "label": "PNG 2x (Retina)"
+          "label": "Nhãn"
         },
         "pngOriginal": {
-          "label": "Original PNG"
+          "label": "Nhãn"
         },
         "webpHigh": {
-          "label": "WebP High",
-          "description": "95% Quality — Best compression"
+          "label": "Nhãn",
+          "description": "Chất lượng 95% — Nén tốt nhất"
         },
         "jpegHigh": {
-          "label": "JPEG High",
-          "description": "95% Quality — Balanced size"
+          "label": "Nhãn",
+          "description": "Chất lượng 95% — Kích thước cân bằng"
         },
         "webpMedium": {
-          "label": "WebP Medium",
-          "description": "80% Quality — Web optimized"
+          "label": "Nhãn",
+          "description": "Chất lượng 80% — Tối ưu web"
         },
         "jpegMedium": {
-          "label": "JPEG Medium",
-          "description": "80% Quality — Reduced size"
+          "label": "Nhãn",
+          "description": "Chất lượng 80% — Kích thước giảm"
         }
       },
-      "exporting": "Exporting..."
+      "exporting": "Đang xuất..."
     },
     "effect3d": {
-      "title": "3D Effect",
-      "subtitle": "Perspective with depth",
-      "intensity": "Intensity",
-      "direction": "Perspective direction",
-      "directionHint": "Click to choose tilt direction",
-      "perspective": "Perspective",
-      "scale": "Scale",
-      "rotation": "3D Rotation",
-      "clickToAdjust": "Click to adjust",
-      "rotationHint": "Use panel to define angles",
-      "rotateZ": "Twist (Z Axis)",
-      "verticalPosition": "Vertical Offset",
-      "reset": "Reset values"
+      "title": "Trình chỉnh sửa",
+      "subtitle": "Phối cảnh có chiều sâu",
+      "intensity": "Cường độ",
+      "direction": "Hướng phối cảnh",
+      "directionHint": "Bấm để chọn hướng nghiêng",
+      "perspective": "Phối cảnh",
+      "scale": "Tỉ lệ",
+      "rotation": "Xoay 3D",
+      "clickToAdjust": "Bấm để điều chỉnh",
+      "rotationHint": "Dùng bảng điều khiển để chỉnh góc",
+      "rotateZ": "Xoắn (Trục Z)",
+      "verticalPosition": "Dịch dọc",
+      "reset": "Đặt lại giá trị"
     },
     "cropper": {
-      "button": "Crop image",
-      "tooltip": "Adjust dimensions and crop"
+      "button": "Xuất",
+      "tooltip": "Điều chỉnh kích thước và cắt xén"
     },
     "photoPreview": {
       "custom": {
-        "label": "Custom",
-        "customize": "Customize",
-        "title": "3D Settings",
-        "perspective": "Perspective",
-        "scale": "Scale",
-        "rotationXY": "Rotation (X/Y)",
-        "rotationZ": "Z Rotation",
-        "vertical": "Vertical",
-        "reset": "Reset"
+        "label": "Nhãn",
+        "customize": "Tùy chỉnh",
+        "title": "Trình chỉnh sửa",
+        "perspective": "Phối cảnh",
+        "scale": "Tỉ lệ",
+        "rotationXY": "Xoay (X/Y)",
+        "rotationZ": "Xoay Z",
+        "vertical": "Dọc",
+        "reset": "Đặt lại"
       },
-      "settings": "Settings",
-      "apply3D": "Apply 3D Effect",
+      "settings": "Cài đặt",
+      "apply3D": "Áp dụng hiệu ứng 3D",
       "mockup3D": "3D: Mockup",
-      "resetDefaults": "Reset Defaults",
-      "reset": "Reset",
+      "resetDefaults": "Đặt lại mặc định",
+      "reset": "Đặt lại",
       "configs": {
-        "front": "Front",
-        "tilt-up": "Tilt Up",
-        "tilt-down": "Tilt Down",
-        "top-left-angle": "Top Left Angle",
-        "top-right-angle": "Top Right Angle",
-        "bottom-left-angle": "Bottom Left Angle",
-        "bottom-right-angle": "Bottom Right Angle",
-        "isometric": "Isometric"
+        "front": "Trước",
+        "tilt-up": "Nghiêng lên",
+        "tilt-down": "Nghiêng xuống",
+        "top-left-angle": "Góc trên trái",
+        "top-right-angle": "Góc trên phải",
+        "bottom-left-angle": "Góc dưới trái",
+        "bottom-right-angle": "Góc dưới phải",
+        "isometric": "Đẳng cự"
       }
     },
     "imageMask": {
-      "trigger": "Mask",
-      "tooltip": "Image mask effect",
-      "title": "Mask Effects",
+      "trigger": "Mặt nạ",
+      "tooltip": "Hiệu ứng mặt nạ ảnh",
+      "title": "Trình chỉnh sửa",
       "tabs": {
-        "presets": "Presets",
-        "custom": "Custom"
+        "presets": "Mẫu có sẵn",
+        "custom": "Tùy chỉnh"
       },
       "presets": {
-        "none": "No Mask",
-        "fade-top": "Fade Top",
-        "fade-bottom": "Fade Bottom",
-        "fade-sides": "Fade Sides",
-        "vignette": "Vignette",
-        "angle-45": "Diagonal 45°"
+        "none": "Không mặt nạ",
+        "fade-top": "Mờ trên",
+        "fade-bottom": "Mờ dưới",
+        "fade-sides": "Mờ hai bên",
+        "vignette": "Tối viền",
+        "angle-45": "Chéo 45°"
       },
       "controls": {
-        "top": "Top",
-        "bottom": "Bottom",
-        "left": "Left",
-        "right": "Right",
-        "add": "Add",
-        "remove": "Remove",
-        "from": "From",
+        "top": "Trên",
+        "bottom": "Dưới",
+        "left": "Trái",
+        "right": "Phải",
+        "add": "Thêm",
+        "remove": "Xóa",
+        "from": "Từ",
         "to": "To"
       }
     },
     "hoverTooltip": {
-      "zoom": "Zoom",
-      "paste": "Paste",
+      "zoom": "Thu phóng",
+      "paste": "Dán",
       "ctrl": "Ctrl",
-      "scroll": "Scroll",
+      "scroll": "Cuộn",
       "keyV": "V"
     },
     "layerPanel": {
       "tooltips": {
-        "show": "Show",
-        "hide": "Hide",
-        "lock": "Lock",
-        "unlock": "Unlock",
-        "delete": "Delete",
-        "deleteGroup": "Delete group",
-        "showLayers": "Show layers panel",
-        "hideLayers": "Hide layers panel",
-        "groupSelected": "Group selected",
-        "ungroup": "Ungroup"
+        "show": "Hiện",
+        "hide": "Ẩn",
+        "lock": "Khóa",
+        "unlock": "Mở khóa",
+        "delete": "Xóa",
+        "deleteGroup": "Xóa nhóm",
+        "showLayers": "Hiện bảng lớp",
+        "hideLayers": "Ẩn bảng lớp",
+        "groupSelected": "Nhóm đã chọn",
+        "ungroup": "Bỏ nhóm"
       },
-      "layers": "Layers",
-      "noLayers": "No layers",
-      "group": "Group",
-      "selected": "selected",
-      "groupAction": "Group",
-      "ungroupAction": "Ungroup",
+      "layers": "Lớp",
+      "noLayers": "Không có lớp",
+      "group": "Nhóm",
+      "selected": "Đã chọn",
+      "groupAction": "Nhóm",
+      "ungroupAction": "Bỏ nhóm",
       "videoLayer": "Video",
-      "imageLayer": "Image"
+      "imageLayer": "Ảnh"
     }
   },
   "playerControls": {
-    "toolbar": "Playback controls",
+    "toolbar": "Điều khiển phát",
     "fullscreen": {
-      "enter": "Full screen (F)",
-      "exit": "Exit full screen (F)"
+      "enter": "Toàn màn hình (F)",
+      "exit": "Thoát toàn màn hình (F)"
     },
     "zoom": {
-      "group": "Timeline zoom",
-      "out": "Zoom out (↓)",
-      "in": "Zoom in (↑)",
-      "label": "Timeline zoom: {level}×"
+      "group": "Thu phóng timeline",
+      "out": "Thu nhỏ (↓)",
+      "in": "Phóng to (↑)",
+      "label": "Thu phóng timeline: {level}×"
     },
     "split": {
-      "clip": "Split clip"
+      "clip": "Tách clip"
     },
     "transport": {
-      "group": "Transport controls",
-      "currentTime": "Current time: {time}",
-      "totalTime": "Total duration: {time}",
-      "backward": "Backward 5s (← or J)",
-      "forward": "Forward 5s (→ or L)",
-      "play": "Play (Space or K)",
-      "pause": "Pause (Space or K)"
+      "group": "Điều khiển phát/tua",
+      "currentTime": "Thời gian hiện tại: {time}",
+      "totalTime": "Tổng thời lượng: {time}",
+      "backward": "Tua lại 5s (← hoặc J)",
+      "forward": "Tua tới 5s (→ hoặc L)",
+      "play": "Phát (Space hoặc K)",
+      "pause": "Tạm dừng (Space hoặc K)"
     },
     "cropper": {
-      "tooltip": "Open video cropper",
-      "button": "Crop"
+      "tooltip": "Mở trình cắt video",
+      "button": "Cắt xén"
     }
   },
   "aspectRatioSelect": {
-    "tooltip": "Select aspect ratio",
+    "tooltip": "Chọn tỉ lệ khung hình",
     "labels": {
-      "auto": "Auto",
-      "custom": "Custom",
+      "auto": "Tự động",
+      "custom": "Tùy chỉnh",
       "youtube": "YouTube",
       "tiktok": "TikTok",
       "instagram": "Instagram",
-      "portrait": "Portrait",
-      "standard": "Standard"
+      "portrait": "Dọc",
+      "standard": "Tiêu chuẩn"
     },
     "customSection": {
-      "title": "Custom",
-      "width": "Width",
-      "height": "Height",
-      "apply": "Apply dimensions"
+      "title": "Tỉ lệ khung hình",
+      "width": "Rộng",
+      "height": "Cao",
+      "apply": "Áp dụng kích thước"
     }
   },
   "videoCropper": {
     "title": "Cắt xén khung hình Video",
-    "noVideo": "No video",
+    "noVideo": "Không có video",
     "sections": {
-      "ratio": "Aspect Ratio",
-      "area": "Area"
+      "ratio": "Tỉ lệ",
+      "area": "Vùng"
     },
     "labels": {
       "x": "X",
       "y": "Y",
-      "width": "W",
-      "height": "H"
+      "width": "Rộng",
+      "height": "Cao"
     },
     "buttons": {
-      "reset": "Reset",
-      "apply": "Apply crop"
+      "reset": "Đặt lại",
+      "apply": "Áp dụng"
     },
-    "close": "Close",
-    "freeRatio": "Free"
+    "close": "Đóng",
+    "freeRatio": "Tự do"
   },
   "timeline": {
-    "noSpace": "No space"
+    "noSpace": "Không còn chỗ"
   },
   "audioMenu": {
     "title": "Quản lý Âm thanh",
     "originalAudio": "Âm thanh gốc của Video",
-    "muted": "Muted",
-    "active": "Active",
-    "masterVolume": "Master volume",
-    "uploadButton": "Upload audio",
-    "uploadHint": "MP3, WAV, OGG, AAC, M4A (max 10MB)",
+    "muted": "Đã tắt tiếng",
+    "active": "Đang hoạt động",
+    "masterVolume": "Âm lượng tổng",
+    "uploadButton": "Tải âm thanh lên",
+    "uploadHint": "MP3, WAV, OGG, AAC, M4A (tối đa 10MB)",
     "timelineTracks": "Tracks âm thanh ({count})",
-    "start": "Start",
-    "duration": "Duration",
-    "exceedsDuration": "Exceeds video duration",
-    "trimAction": "Trim audio",
-    "deleteAction": "Delete audio",
-    "noTracks": "No audio tracks",
-    "noTracksHint": "Upload an audio file to automatically add it to the timeline",
+    "start": "Bắt đầu",
+    "duration": "Thời lượng",
+    "exceedsDuration": "Vượt quá thời lượng video",
+    "trimAction": "Cắt âm thanh",
+    "deleteAction": "Xóa âm thanh",
+    "noTracks": "Chưa có kênh âm thanh",
+    "noTracksHint": "Tải âm thanh lên để tự động thêm vào timeline",
     "errors": {
-      "unsupportedFormat": "Unsupported audio format. Please use MP3, WAV, OGG, AAC, or M4A.",
-      "fileTooLarge": "File is too large. Maximum size is 10MB."
+      "unsupportedFormat": "Định dạng không hỗ trợ. Vui lòng dùng MP3, WAV, OGG, AAC hoặc M4A.",
+      "fileTooLarge": "Tệp quá lớn. Kích thước tối đa 10MB."
     },
-    "defaultSounds": "Default sounds",
+    "defaultSounds": "Âm thanh mặc định",
     "categories": {
-      "confirmation": "Confirmation",
-      "alert": "Alert",
-      "ui": "Interface",
-      "transition": "Transition",
-      "ambient": "Ambient",
-      "system": "System"
+      "confirmation": "Xác nhận",
+      "alert": "Cảnh báo",
+      "ui": "Giao diện",
+      "transition": "Chuyển tiếp",
+      "ambient": "Môi trường",
+      "system": "Hệ thống"
     }
   },
   "exportOverlay": {
-    "processing": "Processing Video",
+    "processing": "Đang xử lý...",
     "status": {
-      "preparing": "Preparing rendering environment",
-      "capturing": "Capturing PNG frames (Step 1 of 2)",
-      "encoding": "Encoding video sequence",
-      "encodingWebM": "Encoding WebM video (Step 2 of 2)",
-      "finalizing": "Packaging final files"
+      "preparing": "Đang chuẩn bị môi trường dựng phim",
+      "capturing": "Đang chụp khung hình PNG (Bước 1/2)",
+      "encoding": "Đang mã hóa chuỗi video",
+      "encodingWebM": "Đang mã hóa video WebM (Bước 2/2)",
+      "finalizing": "Đang đóng gói tệp cuối cùng"
     },
     "warnings": {
-      "performance": "To optimize GPU and CPU resources, <highlight>avoid minimizing this window</highlight>. The process is intensive and requires system priority.",
-      "transparency": "This process may take longer than usual. <highlight>WebM export with transparency</highlight> requires additional CPU processing."
+      "performance": "Để tối ưu tài nguyên GPU và CPU, <highlight>tránh thu nhỏ cửa sổ này</highlight>. Quá trình xử lý nặng và cần ưu tiên hệ thống.",
+      "transparency": "Quá trình này có thể lâu hơn bình thường. <highlight>Xuất WebM với nền trong suốt</highlight> yêu cầu thêm CPU."
     },
     "actions": {
-      "cancel": "Stop export"
+      "cancel": "Dừng xuất"
     }
   },
   "photoPicker": {
-    "tooltip": "Search backgrounds (Unsplash, Pexels, Pixabay)",
+    "tooltip": "Tìm hình nền (Unsplash, Pexels, Pixabay)",
     "title": "Chọn hình ảnh",
-    "statusDiscovering": "Discovering",
-    "searchPlaceholder": "Search backgrounds...",
-    "noResults": "No results",
-    "footerPhotosBy": "Photos by",
-    "footerAnd": " and ",
+    "statusDiscovering": "Đang khám phá",
+    "searchPlaceholder": "Tìm hình nền...",
+    "noResults": "Không có kết quả",
+    "footerPhotosBy": "Ảnh bởi",
+    "footerAnd": " và ",
     "badges": {
-      "blur_gradient": "Blur gradient",
-      "dark_wallpaper": "Dark wallpaper",
-      "minimal_abstract": "Minimal abstract",
-      "neon_city": "Neon city",
-      "nature_landscape": "Nature landscape",
-      "aurora_borealis": "Aurora borealis",
-      "gradient_wallpaper": "Gradient wallpaper"
+      "blur_gradient": "Chuyển sắc mờ",
+      "dark_wallpaper": "Hình nền tối",
+      "minimal_abstract": "Trừu tượng tối giản",
+      "neon_city": "Thành phố neon",
+      "nature_landscape": "Phong cảnh thiên nhiên",
+      "aurora_borealis": "Cực quang",
+      "gradient_wallpaper": "Hình nền chuyển sắc"
     }
   },
   "featuresShowcase": {
     "common": {
-      "videoThumbnail": "Video thumbnail"
+      "videoThumbnail": "Ảnh thu nhỏ video"
     },
     "videos": {
-      "titleLine1": "Polished video",
-      "titleLine2": "demos created.",
-      "description": "Watch high-fidelity screen recordings and cinematic clips generated by our community."
+      "titleLine1": "Video demo",
+      "titleLine2": "đã hoàn thiện.",
+      "description": "Xem các bản ghi màn hình chất lượng cao và clip điện ảnh được tạo bởi cộng đồng."
     },
     "images": {
-      "titleLine1": "Polished image",
-      "titleLine2": "static exports.",
-      "description": "Perfect for your landing pages, social media, or changelogs. Export ultra-crisp mockups in one click."
+      "titleLine1": "Ảnh xuất khẩu",
+      "titleLine2": "chất lượng cao.",
+      "description": "Hoàn hảo cho landing page, mạng xã hội hoặc changelog. Xuất mockup siêu sắc nét chỉ với một cú nhấp."
     },
     "alts": {
       "laptop": "Laptop",
       "iphone": "iPhone",
-      "browser": "Browser"
+      "browser": "Trình duyệt"
     }
   },
   "featuresGrid": {
-    "ariaLabel": "Product features",
-    "titleLine1": "Everything you need to ship",
-    "titleLine2": "stunning demos.",
-    "description": "Record, enhance, and export - cinematic results directly in your browser, no installs required.",
+    "ariaLabel": "Lưới tính năng nổi bật",
+    "titleLine1": "Mọi thứ bạn cần",
+    "titleLine2": "để tạo demo chuyên nghiệp",
+    "description": "Bộ công cụ đầy đủ tính năng chuyên nghiệp, xử lý hoàn toàn trên trình duyệt.",
     "cards": {
       "deviceMockups": {
-        "title": "3D Device Mockups",
-        "description": "Wrap your screen recordings in hyper-realistic 3D device frames."
+        "title": "Mockup thiết bị 3D",
+        "description": "Bọc bản ghi màn hình vào khung thiết bị 3D siêu thực."
       },
       "transparency": {
-        "title": "Transparency"
+        "title": "Trong suốt"
       },
       "backgrounds": {
-        "title": "Backgrounds"
+        "title": "Hình nền"
       },
       "cinematicZoom": {
-        "title": "Cinematic Zoom"
+        "title": "Zoom điện ảnh"
       },
       "elementsLayers": {
-        "title": "Elements & Layers"
+        "title": "Phần tử & Lớp"
       },
       "multiTrackTimeline": {
-        "title": "Multi-track Timeline",
-        "description": "Layer multiple videos, audio tracks, and zoom the canvas."
+        "title": "Timeline đa kênh",
+        "description": "Xếp lớp nhiều video, kênh âm thanh và zoom trên canvas."
       }
     },
     "alts": {
-      "abstract3dRendering": "Abstract 3D rendering",
-      "backgroundLayer3": "Background layer 3",
-      "backgroundLayer2": "Background layer 2",
-      "transparentPreview": "Transparent preview",
-      "backgroundPattern": "Background pattern",
-      "bottomRightAsset": "Bottom right asset",
-      "rightAsset": "Right asset"
+      "abstract3dRendering": "Render 3D trừu tượng",
+      "backgroundLayer3": "Lớp nền 3",
+      "backgroundLayer2": "Lớp nền 2",
+      "transparentPreview": "Xem trước trong suốt",
+      "backgroundPattern": "Mẫu nền",
+      "bottomRightAsset": "Tài nguyên phía dưới phải",
+      "rightAsset": "Tài nguyên bên phải"
     },
     "tags": {
-      "textOverlay": "Text Overlay",
-      "svgShapes": "SVG Shapes",
-      "blurEffects": "Blur Effects"
+      "textOverlay": "Chữ phủ lên",
+      "svgShapes": "Hình SVG",
+      "blurEffects": "Hiệu ứng mờ"
     }
   },
   "socialReactions": {
-    "titleLine1": "Don't just take",
-    "titleLine2": "our word for it",
-    "description": "See how founders and creators are transforming their demos with Openvid.",
-    "views": "Views",
-    "watchReel": "Watch Reel",
-    "originalAudio": "Original audio",
-    "sparklesAlt": "Sparkles decorator",
+    "titleLine1": "Đừng chỉ nghe",
+    "titleLine2": "chúng tôi nói",
+    "description": "Xem cách các nhà sáng lập và người sáng tạo nội dung đang sử dụng Openvid.",
+    "views": "Lượt xem",
+    "watchReel": "Xem Video",
+    "originalAudio": "Âm thanh gốc",
+    "sparklesAlt": "Hiệu ứng lấp lánh",
     "posts": {
       "post1": {
         "text": "Openvid is an open-source browser-based video editor for recording and editing screen captures with cinematic effects, no uploads required.\n\n- 4K export with H.264, WebM, GIF, and image formats\n- 3D camera movement, zoom, and perspective adjustments\n- Device mockups for Safari, Chrome, Arc, and Samsung\n- Multi-track audio with per-track and master volume control\n\nExplore it here:",
@@ -1340,13 +1339,13 @@
     }
   },
   "dropMedia": {
-    "titleImage": "Drop the image",
-    "titleVideo": "Drop your video here"
+    "titleImage": "Thả ảnh",
+    "titleVideo": "Thả video vào đây"
   },
   "audioTrimModal": {
     "title": "Cắt đoạn âm thanh",
-    "subtitle": "Drag the handles or the blue area to adjust",
-    "totalDuration": "Total duration:",
+    "subtitle": "Kéo thanh trượt hoặc vùng xanh để điều chỉnh",
+    "totalDuration": "Tổng thời lượng:",
     "start": "Bắt đầu: {time}s",
     "end": "Kết thúc: {time}s",
     "duration": "Thời lượng: {duration}s",
@@ -1355,167 +1354,167 @@
   },
   "motionMenu": {
     "title": "Hiệu ứng Chuyển động Mockup",
-    "globalMotionLabel": "Animate all",
+    "globalMotionLabel": "Áp dụng hiệu ứng cho tất cả",
     "empty2D": {
-      "title": "Requires 2D Mockup",
-      "description": "Apply a 2D mockup first (browser, macOS, etc.) to animate it."
+      "title": "Chuyển động",
+      "description": "Áp dụng mockup 2D trước (trình duyệt, macOS, v.v.) để tạo hiệu ứng."
     },
     "categories": {
-      "Entrance": "Entrance",
-      "Continue": "Continuous",
-      "Exit": "Exit"
+      "Entrance": "Hiệu ứng vào",
+      "Continue": "Liên tục",
+      "Exit": "Hiệu ứng ra"
     },
     "presets": {
-      "focus-in": "Progressive Focus",
-      "depth-emerge": "Depth Emergence",
-      "z-spin-reveal": "3D Spin Reveal",
-      "isometric-lift": "Isometric Liftoff",
-      "cinematic-showcase": "Cinematic Showcase",
-      "macro-track": "Diagonal Macro Track",
-      "exit-fade-down": "Fade Down Exit",
-      "exit-scale-blur": "Blur Scale Exit",
-      "whip-showcase": "Whip Pan Showcase",
-      "spatial-roam": "Spatial Roam",
-      "rise-crash": "Rise and Crash",
-      "crane-sweep": "Crane Sweep",
-      "orbit-entrance": "Orbit Entrance",
-      "flick-exit": "Flick Exit",
-      "hero-reveal": "Hero Reveal",
-      "macro-pan": "Macro Pan",
-      "screen-glide": "Screen Glide",
-      "float-hold": "Floating Hold",
-      "spiral-drop": "Spiral Drop"
+      "focus-in": "Tiêu điểm dần",
+      "depth-emerge": "Nổi lên theo chiều sâu",
+      "z-spin-reveal": "Xoay 3D hiện ra",
+      "isometric-lift": "Bay lên đẳng cự",
+      "cinematic-showcase": "Trưng bày điện ảnh",
+      "macro-track": "Di chuyển chéo macro",
+      "exit-fade-down": "Mờ dần xuống thoát",
+      "exit-scale-blur": "Mờ thu nhỏ thoát",
+      "whip-showcase": "Pan nhanh trưng bày",
+      "spatial-roam": "Di chuyển không gian",
+      "rise-crash": "Bay lên và rơi",
+      "crane-sweep": "Quét cần cẩu",
+      "orbit-entrance": "Vào quỹ đạo",
+      "flick-exit": "Hất ra thoát",
+      "hero-reveal": "Hiện chủ đạo",
+      "macro-pan": "Pan macro",
+      "screen-glide": "Trượt màn hình",
+      "float-hold": "Nổi giữ nguyên",
+      "spiral-drop": "Rơi xoáy ốc"
     },
     "controls": {
-      "intensity": "Intensity",
-      "speed": "Speed"
+      "intensity": "Cường độ",
+      "speed": "Tốc độ"
     },
-    "deleteTooltip": "Delete motion",
+    "deleteTooltip": "Xóa chuyển động",
     "actions": {
-      "delete": "Delete"
+      "delete": "Xóa"
     },
     "customize": {
-      "title": "Customize motion",
-      "subtitle": "Manually adjust position, zoom, rotation",
-      "positionLabel": "Position",
-      "positionHint": "Drag the mockup to adjust its position",
-      "tiltLabel": "Tilt (X / Y)",
-      "tiltHint": "Click or drag to tilt",
-      "zoomLabel": "Zoom",
-      "rotateZLabel": "Z rotation",
-      "reverseLabel": "Reverse direction",
-      "resetButton": "Reset customization",
-      "blurLabel": "Motion blur"
+      "title": "Chuyển động",
+      "subtitle": "Điều chỉnh vị trí, zoom, xoay thủ công",
+      "positionLabel": "Vị trí",
+      "positionHint": "Kéo mockup để điều chỉnh vị trí",
+      "tiltLabel": "Nghiêng (X / Y)",
+      "tiltHint": "Bấm hoặc kéo để nghiêng",
+      "zoomLabel": "Thu phóng",
+      "rotateZLabel": "Xoay Z",
+      "reverseLabel": "Đảo hướng",
+      "resetButton": "Đặt lại tùy chỉnh",
+      "blurLabel": "Làm mờ chuyển động"
     },
     "customize3D": {
-      "rotationTitle": "Rotation offsets",
-      "rotationSubtitle": "Added to the preset's base rotation (degrees)",
-      "rotateXLabel": "Rotate X (pitch)",
-      "rotateYLabel": "Rotate Y (yaw)",
-      "rotateZLabel": "Rotate Z (roll)",
-      "positionTitle": "Position offsets",
-      "positionSubtitle": "Added to the preset's base position (scene units)",
-      "positionLabel": "Position",
-      "positionHint": "Drag to set X / Y position",
-      "scaleTitle": "Scale",
-      "scaleSubtitle": "Uniform multiplier applied to the model",
-      "scaleLabel": "Scale"
+      "rotationTitle": "Bù xoay",
+      "rotationSubtitle": "Cộng thêm vào góc xoay gốc (độ)",
+      "rotateXLabel": "Xoay X (pitch)",
+      "rotateYLabel": "Xoay Y (yaw)",
+      "rotateZLabel": "Xoay Z (roll)",
+      "positionTitle": "Bù vị trí",
+      "positionSubtitle": "Cộng thêm vào vị trí gốc (đơn vị)",
+      "positionLabel": "Vị trí",
+      "positionHint": "Kéo để đặt vị trí X / Y",
+      "scaleTitle": "Tỉ lệ",
+      "scaleSubtitle": "Hệ số nhân đồng đều áp dụng cho mô hình",
+      "scaleLabel": "Tỉ lệ"
     }
   },
   "MobileTools": {
-    "openMenu": "Open tools menu",
+    "openMenu": "Mở menu công cụ",
     "title": "Công cụ chỉnh sửa",
     "close": "Đóng thanh công cụ",
-    "background": "Background",
+    "background": "Nền",
     "mockup": "Mockup",
-    "motion": "Motion",
-    "zoom": "Zoom",
-    "videos": "Videos",
-    "elements": "Elements",
-    "audio": "Audio",
-    "uploading": "Uploading...",
-    "uploadVideo": "Upload video"
+    "motion": "Chuyển động",
+    "zoom": "Thu phóng",
+    "videos": "Video",
+    "elements": "Phần tử",
+    "audio": "Âm thanh",
+    "uploading": "Đang tải lên...",
+    "uploadVideo": "Tải video lên"
   },
   "feedback": {
-    "tooltip": "Send feedback",
+    "tooltip": "Gửi phản hồi",
     "title": "Gửi ý kiến đóng góp",
-    "close": "Close",
+    "close": "Đóng",
     "types": {
-      "bug": "Bug",
-      "idea": "Idea",
-      "other": "Other"
+      "bug": "Lỗi",
+      "idea": "Ý tưởng",
+      "other": "Khác"
     },
-    "messagePlaceholder": "Tell us what happened or what you'd like to see...",
+    "messagePlaceholder": "Cho chúng tôi biết điều gì đã xảy ra hoặc bạn muốn thấy gì...",
     "emailPlaceholder": "Email của bạn (tùy chọn)",
-    "emailInvalid": "Please enter a valid email address.",
-    "submit": "Send",
-    "successMessage": "Thanks! We got your feedback.",
-    "errorMessage": "Couldn't send it. Please try again."
+    "emailInvalid": "Vui lòng nhập email hợp lệ.",
+    "submit": "Gửi",
+    "successMessage": "Cảm ơn! Chúng tôi đã nhận phản hồi.",
+    "errorMessage": "Không gửi được. Vui lòng thử lại."
   },
   "tour": {
-    "nextBtn": "Next",
-    "prevBtn": "Previous",
-    "doneBtn": "Got it!",
+    "nextBtn": "Tiếp theo",
+    "prevBtn": "Quay lại",
+    "doneBtn": "Đã hiểu!",
     "step1": {
-      "title": "Record your screen!",
-      "description": "Click here to start recording your screen. If you need more information or help, you can check our",
-      "guideLinkText": "User Guide"
+      "title": "Ghi màn hình của bạn!",
+      "description": "Bấm vào đây để bắt đầu ghi màn hình. Nếu bạn cần thêm thông tin hoặc hướng dẫn, hãy xem",
+      "guideLinkText": "Hướng dẫn sử dụng"
     },
     "step2": {
-      "title": "Upload a custom video",
-      "description": "Already have a video? You can also upload it directly from your device to edit it."
+      "title": "Tải video tùy chỉnh",
+      "description": "Đã có video sẵn? Bạn cũng có thể tải trực tiếp từ thiết bị để chỉnh sửa."
     },
     "step3": {
-      "title": "Create mockups from photos",
-      "description": "Not just for video! Upload an image and create amazing mockups from your photos."
+      "title": "Tạo mockup từ ảnh",
+      "description": "Không chỉ dành cho video! Tải ảnh lên và tạo mockup tuyệt đẹp từ ảnh của bạn."
     }
   },
   "labelSidebar": {
     "video": "Video",
-    "zoom": "Zoom",
+    "zoom": "Thu phóng",
     "elements": "Yếu tố",
     "audio": "Âm thanh",
     "motion": "Chuyển động",
-    "movement": "Mov."
+    "movement": "Ch. động"
   },
   "heroPreview": {
     "sidebar": {
-      "record": "Record",
-      "upload": "Upload",
-      "new": "New"
+      "record": "Ghi hình",
+      "upload": "Tải lên",
+      "new": "Mới"
     },
     "background": {
-      "title": "Background",
-      "tabWallpaper": "Wallpaper",
-      "tabColor": "Color",
-      "options": "Options",
-      "desktopLabel": "Desktop",
-      "gradientsLabel": "Gradients",
-      "showMore": "SHOW MORE",
-      "settings": "Settings",
-      "blur": "Blur",
-      "padding": "Padding",
-      "rounded": "Corners",
-      "shadow": "Shadow"
+      "title": "Xem trước",
+      "tabWallpaper": "Hình nền",
+      "tabColor": "Màu sắc",
+      "options": "Tùy chọn",
+      "desktopLabel": "Máy tính",
+      "gradientsLabel": "Chuyển sắc",
+      "showMore": "XEM THÊM",
+      "settings": "Cài đặt",
+      "blur": "Làm mờ",
+      "padding": "Khoảng đệm",
+      "rounded": "Bo góc",
+      "shadow": "Bóng đổ"
     },
     "timeline": {
       "video": "Video",
-      "zoom": "Zoom"
+      "zoom": "Thu phóng"
     },
     "transport": {
-      "rewind": "Rewind 5 seconds",
-      "forward": "Forward 5 seconds",
-      "play": "Play",
-      "pause": "Pause",
-      "mask": "Mask",
-      "crop": "Crop",
-      "auto": "Auto"
+      "rewind": "Tua lại 5 giây",
+      "forward": "Tua tới 5 giây",
+      "play": "Phát",
+      "pause": "Tạm dừng",
+      "mask": "Mặt nạ",
+      "crop": "Cắt xén",
+      "auto": "Tự động"
     }
   },
   "exportSuccess": {
     "title": "Xuất Video thành công!",
-    "photoSuccess": "Your image was exported successfully.",
-    "videoSuccess": "Your video was exported successfully.",
+    "photoSuccess": "Ảnh đã được xuất thành công.",
+    "videoSuccess": "Video đã được xuất thành công.",
     "supportCoffee": "Ủng hộ dự án",
     "starGithub": "Tặng sao cho dự án trên GitHub",
     "close": "Đóng"
