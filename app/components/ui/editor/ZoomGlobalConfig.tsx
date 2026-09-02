@@ -46,8 +46,8 @@ export function ZoomGlobalConfig({
 
         try {
             const duration = videoDuration > 0 ? videoDuration : 10;
-            // Higher sample density: 1 frame every 0.75 - 1.0 seconds (up to 28 frames)
-            const sampleCount = Math.min(28, Math.max(8, Math.floor(duration / 0.85)));
+            // Denser sampling across the entire timeline (1 frame every 0.65s, up to 45 frames)
+            const sampleCount = Math.min(45, Math.max(10, Math.floor(duration / 0.65)));
             const interval = duration / (sampleCount + 1);
 
             let frames: Array<{ time: number; dataUrl: string }> = [];

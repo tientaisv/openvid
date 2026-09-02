@@ -25,35 +25,33 @@ export async function POST(req: Request) {
     const ai = new GoogleGenAI({ apiKey });
 
     const prompt = `
-You are a precision video analysis AI. Your job is to locate EXACT mouse clicks and user interactions across a ${videoDuration.toFixed(1)}s screen recording, and output precise 2D Zoom Keyframes centered directly on each click.
+You are a precision video director AI. Your task is to perform FULL-TIMELINE AUTOMATED ZOOM ANALYSIS for a ${videoDuration.toFixed(1)}s screen recording in a SINGLE PASS.
 
-CRITICAL COORDINATE & ZOOM RULES:
-1. PRECISE (X, Y) COORDINATE CALCULATION:
-   - Calculate coordinates on a 0 to 100 percentage scale:
-     * focusX: 0 = left edge, 50 = center, 100 = right edge.
-     * focusY: 0 = top edge, 50 = center, 100 = bottom edge.
-   - For every detected click: locate the EXACT apex tip of the mouse arrow (↖) or center of the clicked button/input/menu/card.
-   - The zoom center MUST frame the clicked content clearly so the viewer can read the label, button text, or typed input.
-   - Coordinate accuracy examples:
-     * Logo / top-left nav item: focusX: 10-18, focusY: 6-12
-     * Top-bar search input: focusX: 40-60, focusY: 6-12
-     * Top-right profile / notifications: focusX: 84-96, focusY: 6-12
-     * Left sidebar items: focusX: 8-18, focusY: 20-80
-     * Main canvas / central dialog: focusX: 40-60, focusY: 35-65
-     * Bottom action / submit button: focusX: 70-90, focusY: 80-92
+MANDATORY 100% TIMELINE COMPLETION RULE:
+- YOU MUST COVER THE ENTIRE VIDEO FROM START (0.0s) TO FINISH (${videoDuration.toFixed(1)}s) IN THIS SINGLE PASS.
+- Do NOT output only 1, 2, or 3 fragments. You MUST generate as many zoom keyframes as needed to cover EVERY click, mouse movement, and user interaction throughout the entire video.
+  * For a 10s video: generate 3 to 5 zoom keyframes.
+  * For a 20s video: generate 6 to 10 zoom keyframes.
+  * For a 30s+ video: generate 10 to 18+ zoom keyframes.
+- Ensure zoom fragments are chronologically distributed across the entire duration from 0s to ${videoDuration.toFixed(1)}s so the user does NOT need to run AI multiple times.
 
-2. PURE CLEAN 2D ZOOM ONLY (NO EXTRA 3D EFFECTS):
-   - NO 3D rotation, NO tilt, NO perspective distortions.
-   - Standard 2D zoom with zoomLevel between 1.5 and 1.8 (optimal framing: close enough to see details clearly, but wide enough to keep surrounding UI readable).
-   - speed: 5 to 6 (smooth natural zoom).
+PRECISION COORDINATES (focusX, focusY):
+- Coordinates are 0 to 100 percentages:
+  * focusX: 0 = left edge, 50 = center, 100 = right edge.
+  * focusY: 0 = top edge, 50 = center, 100 = bottom edge.
+- Set focusX and focusY directly at the center of the clicked button/input/menu/card or the apex tip of the mouse cursor (↖).
+- Common UI positions:
+  * Top navigation / search / tabs: focusY ≈ 6 - 15
+  * Left sidebar / navigation: focusX ≈ 8 - 20, focusY ≈ 20 - 80
+  * Main central workspace / modal / form: focusX ≈ 35 - 65, focusY ≈ 30 - 70
+  * Bottom-right submit / action buttons: focusX ≈ 70 - 92, focusY ≈ 75 - 92
 
-3. FULL VIDEO COVERAGE (EVERY CLICK):
-   - Analyze all ${frames.length} frames across the entire duration (${videoDuration.toFixed(1)}s).
-   - Whenever a click occurs:
-     * startTime = approx 0.2s before the click or at the moment the cursor settles on the target.
-     * endTime = startTime + 1.8s to 2.5s (holding on the target so the action result is clearly visible).
-   - If multiple clicks happen consecutively in the same UI region within 1.5s, create one continuous zoom fragment covering the whole interaction.
-   - If clicks are in different regions, leave at least 0.4s gap between zoom fragments.
+ZOOM SETTINGS:
+- Standard 2D zoom only (zoomLevel between 1.5 and 1.8).
+- speed: 5 or 6 (smooth, natural easing).
+- startTime: starts approx 0.2s before the click.
+- endTime: lasts 1.6s to 2.5s per action.
+- Leave 0.3s - 0.5s gap between different zooms so the camera pulls out smoothly before zooming into the next target.
 `;
 
     const imageParts = frames.map((frameItem: any, index: number) => {
