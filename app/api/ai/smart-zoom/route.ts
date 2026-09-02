@@ -25,43 +25,40 @@ export async function POST(req: Request) {
     const ai = new GoogleGenAI({ apiKey });
 
     const prompt = `
-You are an expert AI Video Editor specializing in automated cursor-tracking and cinematic product demo zooms (like Screen Studio, Apple, and Linear).
-You are given a chronological sequence of ${frames.length} high-resolution screenshots from a screen recording of duration ${videoDuration.toFixed(1)}s.
+You are a precision video analysis AI. Your job is to locate EXACT mouse clicks and user interactions across a ${videoDuration.toFixed(1)}s screen recording, and output precise 2D Zoom Keyframes centered directly on each click.
 
-Your objective: Scan the entire video timeline, detect EVERY mouse click / user interaction, and generate a Zoom Keyframe ("zoomFragment") for each click across the entire video.
+CRITICAL COORDINATE & ZOOM RULES:
+1. PRECISE (X, Y) COORDINATE CALCULATION:
+   - Calculate coordinates on a 0 to 100 percentage scale:
+     * focusX: 0 = left edge, 50 = center, 100 = right edge.
+     * focusY: 0 = top edge, 50 = center, 100 = bottom edge.
+   - For every detected click: locate the EXACT apex tip of the mouse arrow (↖) or center of the clicked button/input/menu/card.
+   - The zoom center MUST frame the clicked content clearly so the viewer can read the label, button text, or typed input.
+   - Coordinate accuracy examples:
+     * Logo / top-left nav item: focusX: 10-18, focusY: 6-12
+     * Top-bar search input: focusX: 40-60, focusY: 6-12
+     * Top-right profile / notifications: focusX: 84-96, focusY: 6-12
+     * Left sidebar items: focusX: 8-18, focusY: 20-80
+     * Main canvas / central dialog: focusX: 40-60, focusY: 35-65
+     * Bottom action / submit button: focusX: 70-90, focusY: 80-92
 
-DETECTION INSTRUCTIONS:
-1. CURSOR TRACKING:
-   - Carefully inspect each frame for the mouse cursor: arrow (↖), pointing hand (👆), text beam (I), or click circle animation.
-   - Look for where the mouse cursor moves, hovers, and clicks.
-   - Detect state changes caused by clicks: button press highlights, dropdown menus opening, input fields receiving focus/typing, modal popups opening, tab switching, or form submission.
+2. PURE CLEAN 2D ZOOM ONLY (NO EXTRA 3D EFFECTS):
+   - NO 3D rotation, NO tilt, NO perspective distortions.
+   - Standard 2D zoom with zoomLevel between 1.5 and 1.8 (optimal framing: close enough to see details clearly, but wide enough to keep surrounding UI readable).
+   - speed: 5 to 6 (smooth natural zoom).
 
-2. FULL VIDEO AUTO-ZOOM (COVER ALL CLICKS):
-   - Generate zoom keyframes for ALL significant click events from start (0s) to end (${videoDuration.toFixed(1)}s).
-   - Do NOT stop after 1 or 2 clicks; cover the full timeline so the whole video feels professionally directed and dynamic.
-
-3. PRECISE COORDINATES (focusX, focusY):
-   - focusX: 0 = far left, 50 = center, 100 = far right. Calculate the EXACT percentage location of the cursor tip or clicked UI component.
-   - focusY: 0 = top edge, 50 = middle, 100 = bottom edge. Calculate the EXACT percentage location.
-   - For example:
-     * Top-left navigation/logo: focusX ≈ 15, focusY ≈ 10
-     * Top-center search bar: focusX ≈ 50, focusY ≈ 12
-     * Top-right profile/actions: focusX ≈ 88, focusY ≈ 10
-     * Center main dialog/modal: focusX ≈ 50, focusY ≈ 45
-     * Bottom-right submit button: focusX ≈ 85, focusY ≈ 85
-
-4. DURATION & SPACING:
-   - startTime: starts approx 0.2s - 0.4s before or right at the click timestamp.
-   - endTime: startTime + 1.8s to 3.0s (enough time to clearly watch the action and result).
-   - zoomLevel: between 1.6 and 2.4 (clean, readable zoom).
-   - speed: between 5 and 8 (snappy, smooth transition).
-   - If two clicks happen close together (< 1.5s) in the same area, extend the single zoom fragment to cover both. If they are in different screen areas, leave a 0.4s gap between zoom fragments so the camera zooms out before zooming into the next location.
+3. FULL VIDEO COVERAGE (EVERY CLICK):
+   - Analyze all ${frames.length} frames across the entire duration (${videoDuration.toFixed(1)}s).
+   - Whenever a click occurs:
+     * startTime = approx 0.2s before the click or at the moment the cursor settles on the target.
+     * endTime = startTime + 1.8s to 2.5s (holding on the target so the action result is clearly visible).
+   - If multiple clicks happen consecutively in the same UI region within 1.5s, create one continuous zoom fragment covering the whole interaction.
+   - If clicks are in different regions, leave at least 0.4s gap between zoom fragments.
 `;
 
     const imageParts = frames.map((frameItem: any, index: number) => {
       const base64 = typeof frameItem === "string" ? frameItem : frameItem.dataUrl || frameItem.image || "";
       const cleanBase64 = base64.replace(/^data:image\/\w+;base64,/, "");
-      const timeInfo = typeof frameItem === "object" && typeof frameItem.time === "number" ? ` [t=${frameItem.time.toFixed(1)}s]` : ` [frame ${index + 1}]`;
 
       return {
         inlineData: {
@@ -79,7 +76,7 @@ DETECTION INSTRUCTIONS:
         responseSchema: {
           type: Type.OBJECT,
           properties: {
-            summary: { type: Type.STRING, description: "Summary of detected clicks and zoom actions" },
+            summary: { type: Type.STRING, description: "Short summary of detected click interactions" },
             zoomFragments: {
               type: Type.ARRAY,
               items: {
@@ -87,12 +84,11 @@ DETECTION INSTRUCTIONS:
                 properties: {
                   startTime: { type: Type.NUMBER, description: "Start time in seconds (>=0, < duration)" },
                   endTime: { type: Type.NUMBER, description: "End time in seconds (> startTime, <= duration)" },
-                  focusX: { type: Type.NUMBER, description: "Exact horizontal focus point percentage (0-100)" },
-                  focusY: { type: Type.NUMBER, description: "Exact vertical focus point percentage (0-100)" },
-                  zoomLevel: { type: Type.NUMBER, description: "Zoom factor (1.5 - 2.8)" },
-                  speed: { type: Type.NUMBER, description: "Zoom transition speed (4 - 8)" },
-                  enable3D: { type: Type.BOOLEAN, description: "Enable subtle 3D tilt effect" },
-                  actionLabel: { type: Type.STRING, description: "Label of clicked element (e.g. 'Click Sign In', 'Search Box')" },
+                  focusX: { type: Type.NUMBER, description: "Exact horizontal center percentage (0-100) of clicked element" },
+                  focusY: { type: Type.NUMBER, description: "Exact vertical center percentage (0-100) of clicked element" },
+                  zoomLevel: { type: Type.NUMBER, description: "Zoom factor between 1.5 and 1.8" },
+                  speed: { type: Type.NUMBER, description: "Zoom speed (5 or 6)" },
+                  actionLabel: { type: Type.STRING, description: "Clear label of clicked element (e.g. 'Click Đăng nhập', 'Nhập tìm kiếm')" },
                 },
                 required: ["startTime", "endTime", "focusX", "focusY", "zoomLevel", "speed"],
               },
@@ -108,7 +104,7 @@ DETECTION INSTRUCTIONS:
 
     const rawFragments = data.zoomFragments || [];
     
-    // Sort and ensure no overlapping intervals
+    // Sort and ensure no overlapping intervals, pure 2D coordinates
     const validatedFragments: any[] = [];
     const sorted = rawFragments
       .filter((f: any) => typeof f.startTime === "number" && typeof f.endTime === "number" && f.endTime > f.startTime)
@@ -131,8 +127,8 @@ DETECTION INSTRUCTIONS:
       if (start >= videoDuration - 0.2) continue;
       end = Math.min(videoDuration, end);
 
-      const focusX = Math.max(5, Math.min(95, Math.round(f.focusX ?? 50)));
-      const focusY = Math.max(5, Math.min(95, Math.round(f.focusY ?? 50)));
+      const focusX = Math.max(5, Math.min(95, Number(f.focusX.toFixed(1))));
+      const focusY = Math.max(5, Math.min(95, Number(f.focusY.toFixed(1))));
 
       validatedFragments.push({
         id: `ai_zoom_${Date.now()}_${i}_${Math.random().toString(36).substring(2, 6)}`,
@@ -140,19 +136,19 @@ DETECTION INSTRUCTIONS:
         endTime: Number(end.toFixed(2)),
         focusX,
         focusY,
-        zoomLevel: Math.max(1.4, Math.min(3.0, Number((f.zoomLevel ?? 1.8).toFixed(1)))),
-        speed: Math.max(4, Math.min(8, Math.round(f.speed ?? 6))),
-        enable3D: !!f.enable3D,
-        perspective3DIntensity: 45,
-        perspective3DAngleX: f.enable3D ? (focusY < 50 ? 12 : -12) : 0,
-        perspective3DAngleY: f.enable3D ? (focusX < 50 ? -12 : 12) : 0,
+        zoomLevel: Math.max(1.4, Math.min(2.0, Number((f.zoomLevel ?? 1.6).toFixed(1)))),
+        speed: Math.max(4, Math.min(7, Math.round(f.speed ?? 5))),
+        enable3D: false, // Pure clean 2D zoom only - no 3D tilt/distortion
+        perspective3DIntensity: 0,
+        perspective3DAngleX: 0,
+        perspective3DAngleY: 0,
         actionLabel: f.actionLabel || `Click ${i + 1}`,
       });
     }
 
     return NextResponse.json({
       success: true,
-      summary: data.summary || `Đã tự động tạo ${validatedFragments.length} đoạn zoom bám theo click chuột`,
+      summary: data.summary || `Đã tự động tạo ${validatedFragments.length} đoạn zoom bám sát vị trí click chuột`,
       zoomFragments: validatedFragments,
     });
   } catch (error: any) {

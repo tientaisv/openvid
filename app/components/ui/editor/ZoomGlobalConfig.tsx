@@ -77,9 +77,12 @@ export function ZoomGlobalConfig({
                     const ctx = canvas.getContext("2d");
 
                     video.onloadedmetadata = async () => {
-                        // High clarity 854x480 to clearly capture 16px mouse pointers
-                        canvas.width = 854;
-                        canvas.height = Math.round((video.videoHeight / (video.videoWidth || 1)) * 854) || 480;
+                        const videoW = video.videoWidth || 1280;
+                        const videoH = video.videoHeight || 720;
+                        const targetW = 960;
+                        const targetH = Math.round((videoH / videoW) * targetW) || 540;
+                        canvas.width = targetW;
+                        canvas.height = targetH;
 
                         for (let i = 1; i <= sampleCount; i++) {
                             const targetTime = Number(Math.min(duration - 0.05, i * interval).toFixed(2));
