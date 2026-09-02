@@ -35,7 +35,7 @@ interface ExtendedControlPanelProps extends ControlPanelProps {
     onTogglePanel?: () => void;
     isOpen?: boolean;
     elementsTextTabTrigger?: number;
-    onApplyAIZoomFragments?: (fragments: any[]) => void;
+    onApplyAIZoomFragments?: (fragments: any[], withClickSound?: boolean) => void;
 }
 
 export function ControlPanel({

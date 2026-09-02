@@ -14,7 +14,7 @@ interface ZoomGlobalConfigProps {
     videoUrl?: string | null;
     videoDuration?: number;
     getThumbnailForTime?: (time: number) => { dataUrl: string } | null;
-    onApplyAIFragments?: (fragments: ZoomFragment[]) => void;
+    onApplyAIFragments?: (fragments: ZoomFragment[], withClickSound?: boolean) => void;
 }
 
 export function ZoomGlobalConfig({
@@ -29,6 +29,7 @@ export function ZoomGlobalConfig({
     const t = useTranslations("zoomGlobalConfig");
 
     const [isAILoading, setIsAILoading] = useState(false);
+    const [enableClickSound, setEnableClickSound] = useState(true);
     const [aiStatus, setAiStatus] = useState<string>("");
     const [aiSummary, setAiSummary] = useState<string | null>(null);
     const [aiError, setAiError] = useState<string | null>(null);
@@ -131,8 +132,8 @@ export function ZoomGlobalConfig({
             }
 
             if (data.zoomFragments && data.zoomFragments.length > 0) {
-                onApplyAIFragments?.(data.zoomFragments);
-                setAiSummary(data.summary || `Đã tự động tạo ${data.zoomFragments.length} đoạn Zoom bám theo thao tác click.`);
+                onApplyAIFragments?.(data.zoomFragments, enableClickSound);
+                setAiSummary(data.summary || `Đã tự động tạo ${data.zoomFragments.length} đoạn Zoom${enableClickSound ? " kèm âm thanh Click" : ""}.`);
             } else {
                 setAiSummary("Không phát hiện thêm thao tác click chuột cần Zoom.");
             }
@@ -169,6 +170,20 @@ export function ZoomGlobalConfig({
                         </p>
                     </div>
                 </div>
+
+                {/* Sound effect toggle */}
+                <label className="flex items-center justify-between gap-2 py-1 px-2 rounded-lg bg-blue-500/5 border border-blue-500/10 cursor-pointer select-none hover:bg-blue-500/10 transition-colors">
+                    <div className="flex items-center gap-1.5 text-xs text-foreground/90 font-medium">
+                        <Icon icon="solar:volume-loud-bold-duotone" width="16" className="text-blue-500" />
+                        <span>Âm thanh Click chuột</span>
+                    </div>
+                    <input
+                        type="checkbox"
+                        checked={enableClickSound}
+                        onChange={(e) => setEnableClickSound(e.target.checked)}
+                        className="size-4 rounded border-blue-500/40 text-blue-600 focus:ring-0 bg-neutral-900 cursor-pointer accent-blue-600"
+                    />
+                </label>
 
                 {isAILoading && (
                     <div className="flex items-center gap-2 p-2 rounded-lg bg-blue-500/10 border border-blue-500/20 text-xs text-blue-600 dark:text-blue-400 animate-pulse">

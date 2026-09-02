@@ -53,7 +53,7 @@ export const SUPPORTED_AUDIO_EXTENSIONS = [
 
 export const MAX_AUDIO_FILE_SIZE = 50 * 1024 * 1024;
 
-export const MAX_AUDIO_TRACKS = 5;
+export const MAX_AUDIO_TRACKS = 50;
 
 export interface AudioMenuProps {
     audioTracks: AudioTrack[];

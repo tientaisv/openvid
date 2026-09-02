@@ -55,6 +55,7 @@ import { useMockupMotionFragments } from "@/hooks/useMockupMotionFragments";
 import { useZoomFragments } from "@/hooks/useZoomFragments";
 import { useEditorShortcuts } from "@/hooks/useEditorShortcuts";
 import { ExportSuccessModal } from "@/app/components/ui/Exportsuccessmodal";
+import { CLICK_SOUND_DATA_URI, CLICK_SOUND_ID, CLICK_SOUND_NAME } from "@/lib/sfx";
 
 const ControlPanel = lazy(() => import("@/app/components/ui/editor/ControlPanel").then(mod => ({ default: mod.ControlPanel })));
 const Timeline = lazy(() => import("@/app/components/ui/editor/Timeline").then(mod => ({ default: mod.Timeline })));
@@ -338,6 +339,44 @@ export default function Editor() {
         autoTrimModalOpen, pendingAudioUpload, confirmAudioTrim, cancelAudioTrim,
         restoreAudios,
     } = useAudioTracks({ videoDuration, isExportingRef, selectedAudioTrackId, setSelectedAudioTrackId, lastCopyActionRef });
+
+    const handleApplyAIZoomAndAudio = useCallback((newFragments: any[], withClickSound: boolean = true) => {
+        handleApplyAIZoomFragments(newFragments);
+
+        if (withClickSound && newFragments && newFragments.length > 0) {
+            // Register click sound in uploadedAudios if not already present
+            setUploadedAudios(prev => {
+                if (prev.some(a => a.id === CLICK_SOUND_ID)) return prev;
+                return [
+                    ...prev,
+                    {
+                        id: CLICK_SOUND_ID,
+                        name: CLICK_SOUND_NAME,
+                        url: CLICK_SOUND_DATA_URI,
+                        duration: 0.1,
+                        fileSize: 8000,
+                        mimeType: "audio/wav",
+                    },
+                ];
+            });
+
+            // Create synchronized AudioTracks for every click/zoom
+            const newClickTracks: any[] = newFragments.map((f, i) => ({
+                id: `click_sfx_${Date.now()}_${i}_${Math.random().toString(36).substring(2, 6)}`,
+                audioId: CLICK_SOUND_ID,
+                name: `Click Sound ${i + 1}`,
+                startTime: Number(Math.max(0, f.startTime).toFixed(2)),
+                duration: 0.1,
+                volume: 0.85,
+                loop: false,
+            }));
+
+            setAudioTracks(prev => {
+                const nonClickTracks = prev.filter(t => !t.id.startsWith("click_sfx_"));
+                return [...nonClickTracks, ...newClickTracks].sort((a, b) => a.startTime - b.startTime);
+            });
+        }
+    }, [handleApplyAIZoomFragments, setUploadedAudios, setAudioTracks]);
 
     const handleCameraConfigChange = useCallback((partial: Partial<CameraConfig>) => {
         setCameraConfig((prev) => (prev ? { ...prev, ...partial } : prev));
@@ -2885,7 +2924,7 @@ export default function Editor() {
                                         videoThumbnail={zoomFragmentThumbnail}
                                         getThumbnailForTime={getThumbnailForTime}
                                         videoDimensions={zoomFragmentDimensions}
-                                        onApplyAIZoomFragments={handleApplyAIZoomFragments}
+                                        onApplyAIZoomFragments={handleApplyAIZoomAndAudio}
                                         mockupId={mockupId}
                                         mockupConfig={mockupConfig}
                                         onMockupChange={handleMockupChange}

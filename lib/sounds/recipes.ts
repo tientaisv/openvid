@@ -37,6 +37,29 @@ export type SoundRecipe = {
 };
 
 export const RECIPES = {
+  /** Crisp Apple-style mouse click sound for UI actions & zoom sync. */
+  click: {
+    masterGain: 0.55,
+    layers: [
+      { kind: "noise", filterType: "bandpass", filterFrequency: 3200, filterQ: 2.2, attack: 0.001, decay: 0.025, peak: 0.18 },
+      { kind: "tone", waveform: "sine", frequency: 1800, glideTo: 600, glideTime: 0.04, attack: 0.001, decay: 0.045, peak: 0.12 },
+    ],
+  },
+  /** Modern bubbly UI pop sound. */
+  pop: {
+    masterGain: 0.5,
+    layers: [
+      { kind: "tone", waveform: "sine", frequency: 650, glideTo: 1400, glideTime: 0.05, attack: 0.002, decay: 0.07, peak: 0.14 },
+    ],
+  },
+  /** Mechanical keyboard switch click. */
+  switch: {
+    masterGain: 0.5,
+    layers: [
+      { kind: "noise", filterType: "bandpass", filterFrequency: 4500, filterQ: 3.0, attack: 0.001, decay: 0.02, peak: 0.16 },
+      { kind: "tone", waveform: "triangle", frequency: 950, attack: 0.002, decay: 0.035, peak: 0.09 },
+    ],
+  },
   /** A soft two-note ascending bell, like an iOS/macOS confirmation tink. */
   chime: {
     masterGain: 0.5,

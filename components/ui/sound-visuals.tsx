@@ -151,6 +151,9 @@ function SuccessVisual({ active }: VisualProps) {
 }
 
 export const SOUND_VISUALS: Record<SoundName, React.FC<VisualProps>> = {
+  click: PressVisual,
+  pop: BloomVisual,
+  switch: ToggleVisual,
   chime: ChimeVisual,
   sparkle: SparkleVisual,
   ready: ReadyVisual,
