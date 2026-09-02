@@ -6,7 +6,6 @@ import { saveUploadedImage } from "@/lib/image-upload-cache";
 import { clearVideoProjectAndAudios } from "@/lib/video-project-cache";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import GitHubBadge from "@/components/ui/GitHubStars";
 import { useRouter } from "@/navigation";
 
 interface HeroProps {
@@ -120,13 +119,6 @@ export default function Hero({ onVideoUpload, onPhotoUpload }: HeroProps) {
 
   return (
     <>
-      <div className="animate-reveal flex items-center justify-center gap-4 mb-6 z-10 whitespace-nowrap">
-        <img src="/svg/version.svg" alt="" aria-hidden="true" className="h-auto w-16 sm:w-18 shadow-2xl select-none align-middle translate-y-[2px]" />
-        <div className="flex items-center shadow-2xl h-full mt-1">
-          <GitHubBadge />
-        </div>
-      </div>
-
       <h1 className="animate-reveal text-5xl md:text-7xl font-semibold text-white tracking-tight mb-6 leading-[1.1] drop-shadow-[1.2px_1.2px_100.2px_rgba(183,203,248,1)]">
         {t.rich("title", {
           screen: (chunks) => (
