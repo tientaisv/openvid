@@ -35,6 +35,7 @@ interface ExtendedControlPanelProps extends ControlPanelProps {
     onTogglePanel?: () => void;
     isOpen?: boolean;
     elementsTextTabTrigger?: number;
+    onApplyAIZoomFragments?: (fragments: any[]) => void;
 }
 
 export function ControlPanel({
@@ -79,6 +80,7 @@ export function ControlPanel({
     videoThumbnail,
     getThumbnailForTime,
     videoDimensions,
+    onApplyAIZoomFragments,
     // Mockup props
     mockupId,
     mockupConfig,
@@ -441,6 +443,10 @@ export function ControlPanel({
                                     fragments={zoomFragments}
                                     onSelectFragment={(id) => onSelectZoomFragment?.(id)}
                                     onAddFragment={() => onAddZoomFragment?.()}
+                                    videoUrl={videoUrl}
+                                    videoDuration={videoDuration}
+                                    getThumbnailForTime={getThumbnailForTime}
+                                    onApplyAIFragments={onApplyAIZoomFragments}
                                 />
                             </Suspense>
                         )}

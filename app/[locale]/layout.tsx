@@ -25,6 +25,21 @@ import "../globals.css";
 const THEME_INLINE_SCRIPT = `
 (function () {
   try {
+    if (typeof window !== "undefined") {
+      if (!window.crypto) {
+        window.crypto = {};
+      }
+      if (!window.crypto.randomUUID) {
+        window.crypto.randomUUID = function() {
+          return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function(c) {
+            var r = Math.random() * 16 | 0, v = c === "x" ? r : (r & 0x3 | 0x8);
+            return v.toString(16);
+          });
+        };
+      }
+    }
+  } catch (e) {}
+  try {
     var get = function (name) {
       var m = document.cookie.match(new RegExp("(?:^|;\\s*)" + name + "=([^;]*)"));
       return m ? decodeURIComponent(m[1]) : null;

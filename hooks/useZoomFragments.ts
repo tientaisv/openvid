@@ -215,6 +215,13 @@ export function useZoomFragments({
         setActiveTool("zoom");
     }, [copiedZoomFragment, selectedZoomFragmentId, currentTime, videoDuration, copiedZoomMovements, setSelectedZoomFragmentId, setActiveTool]);
 
+    const handleApplyAIZoomFragments = useCallback((newFragments: ZoomFragment[]) => {
+        if (!newFragments || newFragments.length === 0) return;
+        setZoomFragments(newFragments.sort((a, b) => a.startTime - b.startTime));
+        setSelectedZoomFragmentId(newFragments[0].id);
+        setActiveTool("zoom");
+    }, [setActiveTool, setSelectedZoomFragmentId]);
+
     return {
         zoomFragments, setZoomFragments, zoomFragmentsRef,
         zoomMovements, setZoomMovements,
@@ -222,6 +229,7 @@ export function useZoomFragments({
         handleActivateZoomTool, handleAddZoomFragment, handleAddZoomFragmentAtRange,
         handleUpdateZoomFragment, handleToggleZoomMovement, handleAddZoomMovement,
         handleAddZoomMovementAtRange, handleUpdateZoomMovement, handleDeleteZoomMovement,
-        handleDeleteZoomFragment, copySelectedZoomFragment, pasteZoomFragment, copiedZoomFragment
+        handleDeleteZoomFragment, copySelectedZoomFragment, pasteZoomFragment, copiedZoomFragment,
+        handleApplyAIZoomFragments,
     };
 }

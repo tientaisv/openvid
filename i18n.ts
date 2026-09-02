@@ -4,15 +4,25 @@ export const locales = ['en', 'es', 'ru', 'ko'] as const;
 export const defaultLocale = 'en' as const;
 export type Locale = (typeof locales)[number];
 
+const messageLoaders: Record<Locale, () => Promise<{ default: Record<string, unknown> }>> = {
+  en: () => import('./messages/en.json'),
+  es: () => import('./messages/es.json'),
+  ru: () => import('./messages/ru.json'),
+  ko: () => import('./messages/ko.json'),
+};
+
 export default getRequestConfig(async ({ requestLocale }) => {
   const locale = await requestLocale;
 
-  const baseLocale = (locale && locales.includes(locale as Locale)) 
-    ? locale 
+  const baseLocale: Locale = (locale && locales.includes(locale as Locale)) 
+    ? (locale as Locale)
     : defaultLocale;
+
+  const loader = messageLoaders[baseLocale] || messageLoaders[defaultLocale];
+  const messages = (await loader()).default;
 
   return {
     locale: baseLocale,
-    messages: (await import(`./messages/${baseLocale}.json`)).default
+    messages
   };
 });

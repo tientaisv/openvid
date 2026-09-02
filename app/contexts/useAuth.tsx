@@ -8,8 +8,7 @@ import {
   useCallback,
   useMemo,
 } from "react";
-import { createClient } from "@/utils/supabase/client";
-import type { User, Session, AuthChangeEvent } from "@supabase/supabase-js";
+import type { User, Session } from "@supabase/supabase-js";
 
 export interface UserProfile {
   id: string;
@@ -31,16 +30,10 @@ interface AuthContextType {
   loading: boolean;
   signOut: () => Promise<void>;
   refreshProfile: () => Promise<void>;
+  setLocalUser: (user: User | null, profile: UserProfile | null) => void;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
-
-const PROFILE_REFRESH_EVENTS = new Set<AuthChangeEvent>([
-  "INITIAL_SESSION",
-  "SIGNED_IN",
-  "USER_UPDATED",
-  "PASSWORD_RECOVERY",
-]);
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
@@ -48,89 +41,87 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [session, setSession] = useState<Session | null>(null);
   const [loading, setLoading] = useState(true);
 
-  const supabase = useMemo(() => createClient(), []);
-
-  const fetchProfile = useCallback(
-    async (userId: string) => {
-      try {
-        const { data, error } = await supabase
-          .from("user_profiles")
-          .select("*")
-          .eq("id", userId)
-          .single();
-
-        if (error) {
-          console.error("Error fetching profile:", error);
-          return null;
-        }
-
-        return data as UserProfile;
-      } catch (error) {
-        console.error("Error fetching profile:", error);
-        return null;
+  const initAuth = useCallback(() => {
+    try {
+      const localUserStr = localStorage.getItem("openvid_local_user");
+      const localProfileStr = localStorage.getItem("openvid_local_profile");
+      if (localUserStr) {
+        const u = JSON.parse(localUserStr);
+        const p = localProfileStr ? JSON.parse(localProfileStr) : null;
+        setUser(u);
+        setProfile(p);
+        setSession({ user: u, access_token: "local-token", expires_in: 3600 } as any);
+        setLoading(false);
+        return;
       }
-    },
-    [supabase],
-  );
+    } catch (e) {
+      console.error(e);
+    }
+
+    fetch("/api/auth/me")
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.user) {
+          setUser(data.user);
+          setProfile(data.profile);
+          setSession({ user: data.user, access_token: "local-token", expires_in: 3600 } as any);
+          try {
+            localStorage.setItem("openvid_local_user", JSON.stringify(data.user));
+            if (data.profile) localStorage.setItem("openvid_local_profile", JSON.stringify(data.profile));
+          } catch {}
+        }
+      })
+      .catch(() => {})
+      .finally(() => {
+        setLoading(false);
+      });
+  }, []);
+
+  useEffect(() => {
+    initAuth();
+  }, [initAuth]);
+
+  const setLocalUser = useCallback((newUser: User | null, newProfile: UserProfile | null) => {
+    setUser(newUser);
+    setProfile(newProfile);
+    if (newUser) {
+      setSession({ user: newUser, access_token: "local-token", expires_in: 3600 } as any);
+      try {
+        localStorage.setItem("openvid_local_user", JSON.stringify(newUser));
+        if (newProfile) localStorage.setItem("openvid_local_profile", JSON.stringify(newProfile));
+      } catch {}
+    } else {
+      setSession(null);
+      try {
+        localStorage.removeItem("openvid_local_user");
+        localStorage.removeItem("openvid_local_profile");
+      } catch {}
+    }
+  }, []);
 
   const refreshProfile = useCallback(async () => {
     if (!user) return;
-    const profileData = await fetchProfile(user.id);
-    setProfile(profileData);
-  }, [user, fetchProfile]);
-
-  useEffect(() => {
-    let mounted = true;
-
-    const {
-      data: { subscription },
-    } = supabase.auth.onAuthStateChange(
-      (event: AuthChangeEvent, newSession: Session | null) => {
-        if (!mounted) return;
-
-        setSession(newSession);
-        setUser(newSession?.user ?? null);
-        setLoading(false);
-
-        if (event === "TOKEN_REFRESHED") {
-          return;
-        }
-
-        if (event === "SIGNED_OUT" || !newSession?.user) {
-          setProfile(null);
-          return;
-        }
-
-        if (PROFILE_REFRESH_EVENTS.has(event)) {
-          const userId = newSession.user.id;
-          void fetchProfile(userId).then((profileData) => {
-            if (mounted) setProfile(profileData);
-          });
-        }
-      },
-    );
-
-    return () => {
-      mounted = false;
-      subscription.unsubscribe();
-    };
-  }, [supabase, fetchProfile]);
+    try {
+      const res = await fetch("/api/auth/me");
+      const data = await res.json();
+      if (data.profile) setProfile(data.profile);
+    } catch {}
+  }, [user]);
 
   const signOut = useCallback(async () => {
-    // Optimistic clear for snappy UI; SIGNED_OUT confirms via the listener.
     setUser(null);
     setProfile(null);
     setSession(null);
-
-    const { error } = await supabase.auth.signOut({ scope: "local" });
-    if (error) {
-      console.error("Error signing out:", error);
-    }
-  }, [supabase]);
+    try {
+      localStorage.removeItem("openvid_local_user");
+      localStorage.removeItem("openvid_local_profile");
+    } catch {}
+    await fetch("/api/auth/logout", { method: "POST" }).catch(() => {});
+  }, []);
 
   const value = useMemo(
-    () => ({ user, profile, session, loading, signOut, refreshProfile }),
-    [user, profile, session, loading, signOut, refreshProfile],
+    () => ({ user, profile, session, loading, signOut, refreshProfile, setLocalUser }),
+    [user, profile, session, loading, signOut, refreshProfile, setLocalUser],
   );
 
   return (

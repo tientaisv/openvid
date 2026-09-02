@@ -82,6 +82,16 @@ export function useVideoExport(
             return;
         }
 
+        if (typeof window !== "undefined" && !window.isSecureContext && typeof (window as unknown as { VideoEncoder?: unknown }).VideoEncoder === "undefined" && settings.quality !== "gif") {
+            setExportProgress({
+                status: "error",
+                progress: 0,
+                message: "VideoEncoder is not available in insecure contexts. Try serving your page over HTTPS or use http://localhost.",
+            });
+            isExportingRef.current = false;
+            return;
+        }
+
         const qualitySettings = QUALITY_SETTINGS[settings.quality];
         const fps = settings.fps || qualitySettings.fps || DEFAULT_EXPORT_FPS;
 
@@ -178,10 +188,15 @@ export function useVideoExport(
                 });
             } else {
                 console.error("Error during export:", error);
+                const rawMsg = error instanceof Error ? error.message : "Error during export";
+                const isSecureContextError = rawMsg.includes("VideoEncoder") || rawMsg.includes("insecure context");
+                const message = isSecureContextError
+                    ? "VideoEncoder is not available in insecure contexts. Try serving your page over HTTPS or use http://localhost."
+                    : rawMsg;
                 setExportProgress({
                     status: "error",
                     progress: 0,
-                    message: error instanceof Error ? error.message : "Error during export",
+                    message,
                 });
             }
         } finally {

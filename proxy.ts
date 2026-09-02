@@ -15,8 +15,26 @@ const intlMiddleware = createIntlMiddleware({
 });
 
 export default async function proxy(request: NextRequest) {
-  const country = request.headers.get("x-vercel-ip-country") || "UNKNOWN";
+  const pathname = request.nextUrl.pathname;
 
+  if (
+    pathname.startsWith("/ffmpeg") ||
+    pathname.startsWith("/models") ||
+    pathname.startsWith("/draco") ||
+    pathname.startsWith("/images") ||
+    pathname.startsWith("/svg") ||
+    pathname.startsWith("/hdri") ||
+    pathname.startsWith("/elements") ||
+    pathname.startsWith("/videos") ||
+    pathname.startsWith("/_next") ||
+    pathname.startsWith("/api") ||
+    pathname === "/site.webmanifest" ||
+    pathname.includes(".")
+  ) {
+    return NextResponse.next();
+  }
+
+  const country = request.headers.get("x-vercel-ip-country") || "UNKNOWN";
   const needsAuth = shouldRefreshSession(request);
 
   if (!needsAuth) {
@@ -87,6 +105,6 @@ function forwardWithRefreshedRequest(
 
 export const config = {
   matcher: [
-    "/((?!api|ffmpeg|models|hdri|_next/static|_next/image|sitemap.xml|robots.txt|site.webmanifest|.*\\.(?:svg|png|jpg|jpeg|gif|webp|mp4|avif|webm|wasm|js|glb|gltf|webmanifest|json|ico)$).*)",
+    "/((?!api|ffmpeg|models|hdri|draco|elements|images|svg|videos|_next/static|_next/image|sitemap.xml|robots.txt|site.webmanifest|.*\\.(?:svg|png|jpg|jpeg|gif|webp|mp4|avif|webm|wasm|js|glb|gltf|webmanifest|json|ico)$).*)",
   ],
 };

@@ -318,7 +318,8 @@ export default function Editor() {
         selectedZoomFragment, handleActivateZoomTool, handleAddZoomFragment, handleAddZoomFragmentAtRange,
         handleUpdateZoomFragment, handleToggleZoomMovement, handleAddZoomMovement,
         handleAddZoomMovementAtRange, handleUpdateZoomMovement, handleDeleteZoomMovement,
-        handleDeleteZoomFragment, copySelectedZoomFragment, pasteZoomFragment, copiedZoomFragment
+        handleDeleteZoomFragment, copySelectedZoomFragment, pasteZoomFragment, copiedZoomFragment,
+        handleApplyAIZoomFragments,
     } = useZoomFragments({
         currentTime, videoDuration, setActiveTool, lastCopyActionRef,
         selectedZoomFragmentId, setSelectedZoomFragmentId,
@@ -1036,14 +1037,6 @@ export default function Editor() {
     const router = useRouter();
 
     const handleExport = useCallback((quality: ExportQuality) => {
-        if (!authUser) {
-            savePendingExport(quality);
-            router.replace({
-                pathname: "/login",
-                query: { redirectedFrom: `/${locale}${pathname}` },
-            });
-            return;
-        }
         isExportingRef.current = true;
         for (const audioEl of audioElementsRef.current.values()) {
             audioEl.pause();
@@ -1082,7 +1075,7 @@ export default function Editor() {
         }).finally(() => {
             isExportingRef.current = false;
         });
-    }, [videoBlob, selectedWallpaper, trimRange, muteOriginalAudio, videoHasAudioTrack, audioTracks, uploadedAudios, masterVolume, videoClips, globalSpeed, exportVideo, setIsPlaying, authUser, router, locale, pathname]);
+    }, [videoBlob, selectedWallpaper, trimRange, muteOriginalAudio, videoHasAudioTrack, audioTracks, uploadedAudios, masterVolume, videoClips, globalSpeed, exportVideo, setIsPlaying]);
 
     const handleExportRef = useRef(handleExport);
     useEffect(() => {
@@ -2892,6 +2885,7 @@ export default function Editor() {
                                         videoThumbnail={zoomFragmentThumbnail}
                                         getThumbnailForTime={getThumbnailForTime}
                                         videoDimensions={zoomFragmentDimensions}
+                                        onApplyAIZoomFragments={handleApplyAIZoomFragments}
                                         mockupId={mockupId}
                                         mockupConfig={mockupConfig}
                                         onMockupChange={handleMockupChange}
@@ -3244,6 +3238,7 @@ export default function Editor() {
                 isOpen={showExportSuccess}
                 onClose={() => setShowExportSuccess(false)}
                 mediaType={exportSuccessMediaType}
+                thumbnailDataUrl={zoomFragmentThumbnail || getThumbnailForTime?.(1)?.dataUrl}
             />
             <Suspense fallback={null}>
                 {isVideoMode ? (
