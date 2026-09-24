@@ -10,6 +10,8 @@ import { useTranslations } from "next-intl";
 import { renderSoundToFile, type SoundName } from "@/lib/sounds";
 import { SoundLibrary } from "@/components/ui/SoundLibrary";
 
+import { TutorialVoiceoverModal } from "./TutorialVoiceoverModal";
+
 export function AudioMenu({
     audioTracks,
     uploadedAudios,
@@ -19,11 +21,15 @@ export function AudioMenu({
     onDeleteAudioTrack,
     selectedAudioTrackId,
     onSelectAudioTrack,
+    videoUrl,
+    existingZoomFragments = [],
+    onApplyTutorialVoiceover,
 }: AudioMenuProps) {
     const t = useTranslations("audioMenu");
     const fileInputRef = useRef<HTMLInputElement>(null);
     const [trimModalOpen, setTrimModalOpen] = useState(false);
     const [trimModalTrack, setTrimModalTrack] = useState<AudioTrack | null>(null);
+    const [tutorialModalOpen, setTutorialModalOpen] = useState(false);
 
     const trackRefs = useRef<Map<string, HTMLDivElement>>(new Map());
     useEffect(() => {
@@ -96,6 +102,35 @@ export function AudioMenu({
             <div className="flex items-center gap-2 text-foreground font-medium">
                 <Icon icon="mdi:volume-high" width="20" aria-hidden="true" />
                 <span>{t("title")}</span>
+            </div>
+
+            {/* AI Tutorial Voiceover Studio Card */}
+            <div className="relative overflow-hidden rounded-xl border border-purple-500/25 bg-gradient-to-b from-purple-500/15 via-indigo-500/5 to-transparent p-3.5 flex flex-col gap-3 shadow-sm">
+                <div className="flex items-center gap-2.5">
+                    <div className="w-8 h-8 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center shrink-0 shadow-sm">
+                        <Icon icon="solar:magic-stick-3-bold-duotone" width="18" />
+                    </div>
+                    <div className="flex flex-col min-w-0">
+                        <div className="flex items-center gap-2">
+                            <span className="text-xs font-semibold text-foreground">AI Tutorial Voiceover</span>
+                            <span className="px-1.5 py-0.2 rounded-full text-[10px] font-semibold bg-purple-500/20 text-purple-300 border border-purple-500/30">
+                                Mới
+                            </span>
+                        </div>
+                        <p className="text-[11px] text-muted-foreground truncate">
+                            Tự động soạn kịch bản & lồng tiếng hướng dẫn
+                        </p>
+                    </div>
+                </div>
+
+                <Button
+                    type="button"
+                    onClick={() => setTutorialModalOpen(true)}
+                    className="w-full h-8 text-xs font-medium rounded-lg bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white shadow-md shadow-purple-500/20 flex items-center justify-center gap-2"
+                >
+                    <Icon icon="solar:stars-minimalistic-bold" width="14" />
+                    <span>Tạo Giọng Nói Hướng Dẫn AI</span>
+                </Button>
             </div>
 
             <div
@@ -215,6 +250,17 @@ export function AudioMenu({
                     />
                 );
             })()}
+
+            <TutorialVoiceoverModal
+                isOpen={tutorialModalOpen}
+                onClose={() => setTutorialModalOpen(false)}
+                videoUrl={videoUrl}
+                videoDuration={videoDuration}
+                existingZoomFragments={existingZoomFragments}
+                onApplyTutorial={(newTracks, newAudios, captions) => {
+                    onApplyTutorialVoiceover?.(newTracks, newAudios, captions);
+                }}
+            />
         </div>
     );
 }

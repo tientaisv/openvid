@@ -64,6 +64,13 @@ export interface AudioMenuProps {
     onDeleteAudioTrack: (trackId: string) => void;
     selectedAudioTrackId: string | null;
     onSelectAudioTrack: (id: string | null) => void;
+    videoUrl?: string | null;
+    existingZoomFragments?: any[];
+    onApplyTutorialVoiceover?: (
+        tracks: AudioTrack[],
+        audios: UploadedAudio[],
+        captions?: any[]
+    ) => void;
 }
 
 export const MIN_FRAGMENT_DURATION = 0.1;

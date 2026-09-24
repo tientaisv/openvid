@@ -29,13 +29,17 @@ const HistoryMenu = lazy(() => import("./HistoryMenu").then(mod => ({ default: m
 const MotionGlobalConfig = lazy(() => import("./MotionGlobalConfig").then(mod => ({ default: mod.MotionGlobalConfig })));
 const MotionFragmentEditor = lazy(() => import("./MotionFragmentEditor").then(mod => ({ default: mod.MotionFragmentEditor })));
 const MotionFragmentEditor3D = lazy(() => import("./MotionFragmentEditor3D").then(mod => ({ default: mod.MotionFragmentEditor3D })));
+import type { AudioTrack, UploadedAudio } from "@/types/audio.types";
+import type { ZoomFragment } from "@/types/zoom.types";
+import type { TextElement } from "@/types/canvas-elements.types";
 import { MOTION_PRESET_3D_IDS } from "@/lib/mockup-motion";
 
 interface ExtendedControlPanelProps extends ControlPanelProps {
     onTogglePanel?: () => void;
     isOpen?: boolean;
     elementsTextTabTrigger?: number;
-    onApplyAIZoomFragments?: (fragments: any[], withClickSound?: boolean) => void;
+    onApplyAIZoomFragments?: (fragments: ZoomFragment[], withClickSound?: boolean) => void;
+    onApplyTutorialVoiceover?: (tracks: AudioTrack[], audios: UploadedAudio[], captions?: TextElement[]) => void;
 }
 
 export function ControlPanel({
@@ -81,6 +85,7 @@ export function ControlPanel({
     getThumbnailForTime,
     videoDimensions,
     onApplyAIZoomFragments,
+    onApplyTutorialVoiceover,
     // Mockup props
     mockupId,
     mockupConfig,
@@ -409,6 +414,9 @@ export function ControlPanel({
                             onDeleteAudioTrack={onDeleteAudioTrack || (() => { })}
                             selectedAudioTrackId={selectedAudioTrackId ?? null}
                             onSelectAudioTrack={setSelectedAudioTrackId || (() => { })}
+                            videoUrl={videoUrl}
+                            existingZoomFragments={zoomFragments}
+                            onApplyTutorialVoiceover={onApplyTutorialVoiceover}
                         />
                     </Suspense>
                 )}

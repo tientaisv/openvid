@@ -7,7 +7,7 @@ import { loadVideoFromIndexedDB, deleteRecordedVideo } from "@/hooks/useScreenRe
 import { useVideoUpload } from "@/hooks/useVideoUpload";
 import { useImageProjects } from "@/hooks/useImageProjects";
 import { getUploadedVideo, deleteUploadedVideo, getVideoTrack, clearVideoTrack } from "@/lib/video-upload-cache";
-import { saveVideoProject, cleanupOrphanAudios, getVideoProject, saveCameraBlob, getCameraBlob, clearVideoProjectAndAudios } from "@/lib/video-project-cache";
+import { saveVideoProject, cleanupOrphanAudios, getVideoProject, saveCameraBlob, getCameraBlob, clearVideoProjectAndAudios, saveAudioBlob } from "@/lib/video-project-cache";
 import { getUploadedImage, deleteUploadedImage } from "@/lib/image-upload-cache";
 import { useEditorMode } from "@/hooks/useEditorMode";
 import { useActiveTool } from "@/hooks/useActiveTool";
@@ -377,6 +377,37 @@ export default function Editor() {
             });
         }
     }, [handleApplyAIZoomFragments, setUploadedAudios, setAudioTracks]);
+
+    const handleApplyTutorialVoiceover = useCallback((newTracks: any[], newAudios: any[], captions?: any[]) => {
+        if (newAudios && newAudios.length > 0) {
+            setUploadedAudios(prev => [...prev, ...newAudios]);
+            for (const a of newAudios) {
+                if (a.url && a.id) {
+                    fetch(a.url)
+                        .then(res => res.blob())
+                        .then(blob => {
+                            saveAudioBlob(a.id, blob, {
+                                fileName: a.name,
+                                duration: a.duration,
+                                fileSize: a.fileSize,
+                                mimeType: a.mimeType,
+                            });
+                        })
+                        .catch(err => console.warn("Failed to persist tutorial voiceover blob:", err));
+                }
+            }
+        }
+
+        if (newTracks && newTracks.length > 0) {
+            setAudioTracks(prev => [...prev, ...newTracks].sort((a, b) => a.startTime - b.startTime));
+        }
+
+        if (captions && captions.length > 0) {
+            for (const cap of captions) {
+                addCanvasElement(cap);
+            }
+        }
+    }, [setUploadedAudios, setAudioTracks, addCanvasElement]);
 
     const handleCameraConfigChange = useCallback((partial: Partial<CameraConfig>) => {
         setCameraConfig((prev) => (prev ? { ...prev, ...partial } : prev));
@@ -2925,6 +2956,7 @@ export default function Editor() {
                                         getThumbnailForTime={getThumbnailForTime}
                                         videoDimensions={zoomFragmentDimensions}
                                         onApplyAIZoomFragments={handleApplyAIZoomAndAudio}
+                                        onApplyTutorialVoiceover={handleApplyTutorialVoiceover}
                                         mockupId={mockupId}
                                         mockupConfig={mockupConfig}
                                         onMockupChange={handleMockupChange}
